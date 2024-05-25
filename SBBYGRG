@@ -10,6 +10,7 @@ _G.titlename = "Name"
 _G.badgename = "Name"
 _G.glovename = "Name"
 _G.slap = true
+_G.antikick = true
 
 -- Functions
 
@@ -368,6 +369,22 @@ function slap()
       end
 end
 
+function admindetect()
+      while _G.antikick == true do
+            if game.Players:FindFirstChild("DevOfficiallyReality") or game.Players:FindFirstChild("itz_galaxymidnight10") or game.Players:FindFirstChild("MONsocool666") or game.Players:FindFirstChild("almondandraisinaaaaa") then
+                  OrionLib:MakeNotification({
+	                          Name = "Admin Detection",
+	                          Content = "Admin Joined! Kicking player...",
+	                          Image = "rbxassetid://4483345998",
+                          	Time = 2
+                       })
+                   task.wait(0.5)
+                   game.Players.LocalPlayer:Kick("Admin Joined. Kicked to avoid ban")
+            end
+            task.wait(0.1)
+       end
+end
+
 -- Tabs
 local farmTab = Window:MakeTab({
 	Name = "Farm",
@@ -683,6 +700,14 @@ miscTab:AddButton({
 	Callback = function()
       		OrionLib:Destroy()
   	end
+})
+miscTab:AddToggle({
+	Name = "Detect Admins",
+	Default = false,
+	Callback = function(Value)
+		_G.antikick = Value
+		admindetect()
+	end    
 })
 
 end
