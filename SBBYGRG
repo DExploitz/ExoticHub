@@ -11,6 +11,8 @@ _G.badgename = "Name"
 _G.glovename = "Name"
 _G.slap = true
 _G.antikick = true
+_G.nolimit = true
+_G.nospeed = true
 
 -- Functions
 
@@ -255,18 +257,27 @@ function giveglove()
 end
 
 function tp()
-      local pos
-      local plr = game.Players.LocalPlayer.Character
+      local workspace = game:GetService("Workspace")
       if _G.tpname == "Brazil" then
-            pos = game:GetService("Workspace").BrazilPosition.Position
-            plr:MoveTo(Vector3.new(pos))
-      elseif _G.tpname == "Dimension" then
-            pos = game:GetService("Workspace").DimensionPosition.Position
-            plr:MoveTo(Vector3.new(pos))
+            game.Players.LocalPlayer.Character:MoveTo(workspace.BrazilPosition.Position)
+      end
+      if _G.tpname == "Dimension" then
+            game.Players.LocalPlayer.Character:MoveTo(workspace.DimensionPosition.Position)
       end
       if _G.tpname == "Backrooms" then
-            pos = -1465, 5177, -76
-            plr:MoveTo(Vector3.new(pos))
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1465, 5177, -76))
+      end
+      if _G.tpname == "School" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(98, 295, 132))
+      end
+      if _G.tpname == "Castle" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(104, 294, -441))
+      end
+      if _G.tpname == "Volcano" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(323, 319, -20))
+      end
+      if _G.tpname == "Church" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-169, 327, 19))
       end
 end
       
@@ -385,6 +396,30 @@ function admindetect()
        end
 end
 
+function nolimit()
+      while _G.nolimit == true do
+            task.wait(0.000001)
+            if game:GetService("StarterPlayer").StarterCharacterScripts:FindFirstChild("InventoryLimiter") then
+                  game:GetService("StarterPlayer").StarterCharacterScripts:FindFirstChild("InventoryLimiter"):Destroy()
+            end
+            if game.Players.LocalPlayer.Character:FindFirstChild("InventoryLimiter") then
+                  game.Players.LocalPlayer.Character:FindFirstChild("InventoryLimiter"):Destroy()
+            end
+      end
+end
+
+function nospeed()
+      while _G.nospeed == true do
+            task.wait(0.000001)
+            if game:GetService("StarterPlayer").StarterPlayerScripts:FindFirstChild("SpeedCamera") then
+                  game:GetService("StarterPlayer").StarterPlayerScripts:FindFirstChild("SpeedCamera"):Destroy()
+            end
+            if game.Players.LocalPlayer.PlayerScripts:FindFirstChild("SpeedCamera") then
+                  game.Players.LocalPlayer.PlayerScripts:FindFirstChild("SpeedCamera"):Destroy()
+            end
+      end
+end
+
 -- Tabs
 local farmTab = Window:MakeTab({
 	Name = "Farm",
@@ -439,6 +474,26 @@ farmTab:AddToggle({
 	end
 })
 
+miscTab:AddToggle({
+	Name = "No Inventory Limit",
+	Default = false,
+	Callback = function(Value)
+	      task.wait(0.1)
+          _G.nolimit = Value
+          nolimit()
+	end
+})
+
+miscTab:AddToggle({
+	Name = "No Speed Effect",
+	Default = false,
+	Callback = function(Value)
+	      task.wait(0.1)
+          _G.nospeed = Value
+          nospeed()
+	end
+})
+
 -- Buttons
 teleportTab:AddButton({
 	Name = "Brazil Island",
@@ -458,6 +513,34 @@ teleportTab:AddButton({
 	Name = "Backrooms",
 	Callback = function()
       		_G.tpname = "Backrooms"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "School",
+	Callback = function()
+      		_G.tpname = "School"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Castle",
+	Callback = function()
+      		_G.tpname = "Castle"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Volcano",
+	Callback = function()
+      		_G.tpname = "Volcano"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Church",
+	Callback = function()
+      		_G.tpname = "Church"
               tp()
   	end    
 })
@@ -708,6 +791,13 @@ miscTab:AddToggle({
 		_G.antikick = Value
 		admindetect()
 	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "ExoticHub",
+	Content = "Loaded! ExoticHub made by DExploitz on YouTube. Fixed Teleports",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 end
