@@ -344,13 +344,21 @@ end
 function kill()
       for i, v in pairs(game.Players:GetPlayers()) do
             if v.Name ~= game.Players.LocalPlayer.Name then
-                  local args = {
+                  local kargs = {
                         [1] = "slash",
                         [2] = v.Character,
-                        [3] = Vector3.new(-999999999999999999, -99999999999999999, -999999999999999)
+                        [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
                       }
-                  game.Players.LocalPlayer.Backpack:WaitForChild("Brazil")
-                  game:GetService("Players").LocalPlayer.Backpack.Brazil.Event:FireServer(unpack(args))
+                  for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                        if v:IsA("Tool") and v:FindFirstChild("Event") then
+                              v.Event:FireServer(unpack(kargs))
+                        end
+                  end
+                  for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                        if v:IsA("Tool") and v:FindFirstChild("Event") then
+                              v.Event:FireServer(unpack(kargs))
+                        end
+                  end
             end
       end
 end
@@ -764,9 +772,6 @@ glovesTab:AddButton({
 funTab:AddButton({
 	Name = "Instakill Others",
 	Callback = function()
-      		_G.glovename = "Brazil"
-              giveglove()
-              task.wait(0.3)
               kill()
   	end
 })
@@ -795,7 +800,7 @@ miscTab:AddToggle({
 
 OrionLib:MakeNotification({
 	Name = "ExoticHub",
-	Content = "Loaded! ExoticHub made by DExploitz on YouTube. Fixed Teleports",
+	Content = "Loaded! ExoticHub made by DExploitz on YouTube. [Fixed InstaKill]",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
