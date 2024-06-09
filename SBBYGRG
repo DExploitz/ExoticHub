@@ -13,6 +13,8 @@ _G.slap = true
 _G.antikick = true
 _G.nolimit = true
 _G.nospeed = true
+_G.killmode = "Mode"
+_G.plrname = "Name"
 
 -- Functions
 
@@ -342,23 +344,51 @@ function badge()
 end
 
 function kill()
-      for i, v in pairs(game.Players:GetPlayers()) do
-            if v.Name ~= game.Players.LocalPlayer.Name then
-                  local kargs = {
+      if _G.killmode == "all" then
+            for i, v in pairs(game.Players:GetPlayers()) do
+                  if v.Name ~= game.Players.LocalPlayer.Name then
+                        local kargs = {
+                              [1] = "slash",
+                              [2] = v.Character,
+                              [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
+                            }
+                        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                                    v.Event:FireServer(unpack(kargs))
+                              end
+                        end
+                        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                                    v.Event:FireServer(unpack(kargs))
+                              end
+                        end
+                  end
+            end
+      end
+      if _G.killmode == "single" then
+            if game:GetService("Players"):FindFirstChild(_G.plrname) then
+                  local kargs2 = {
                         [1] = "slash",
-                        [2] = v.Character,
+                        [2] = game:GetService("Players"):FindFirstChild(_G.plrname).Character,
                         [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
                       }
                   for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
                         if v:IsA("Tool") and v:FindFirstChild("Event") then
-                              v.Event:FireServer(unpack(kargs))
+                             v.Event:FireServer(unpack(kargs2))
                         end
                   end
                   for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-                        if v:IsA("Tool") and v:FindFirstChild("Event") then
-                              v.Event:FireServer(unpack(kargs))
-                        end
+                       if v:IsA("Tool") and v:FindFirstChild("Event") then
+                              v.Event:FireServer(unpack(kargs2))
+                       end
                   end
+            else
+                  OrionLib:MakeNotification({
+	                   Name = "Error",
+                   	Content = "Player Not Found!",
+	                   Image = "rbxassetid://4483345998",
+                   	Time = 2
+                  })
             end
       end
 end
@@ -772,6 +802,7 @@ glovesTab:AddButton({
 funTab:AddButton({
 	Name = "Instakill Others",
 	Callback = function()
+	          _G.killmode = "all"
               kill()
   	end
 })
@@ -782,6 +813,16 @@ funTab:AddToggle({
 		_G.slap = Value
 		slap()
 	end    
+})
+funTab:AddTextbox({
+	Name = "Kill Player",
+	Default = "Username",
+	TextDisappear = true,
+	Callback = function(Value)
+	    _G.killmode = "single"
+	    _G.plrname = Value
+		kill()
+	end	  
 })
 miscTab:AddButton({
 	Name = "Destroy Gui",
@@ -800,10 +841,17 @@ miscTab:AddToggle({
 
 OrionLib:MakeNotification({
 	Name = "ExoticHub",
-	Content = "Loaded! ExoticHub made by DExploitz on YouTube. [Fixed InstaKill]",
+	Content = "Loaded! ExoticHub made by DExploitz on YouTube.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+OrionLib:MakeNotification({
+	Name = "Changelogs",
+	Content = "Fixed Instakill, fixed teleports, added kill player textbox",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 
 end
 OrionLib:Init()
