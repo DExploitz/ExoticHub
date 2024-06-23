@@ -41,213 +41,192 @@ function slapfarm()
                   [2] = workspace.TimePlayedLeaderboard:FindFirstChild("First Place Avatar").Rig,
                   [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                 }              
+            local args5 = {
+                  [1] = "slash",
+                  [2] = workspace.NPC:FindFirstChild("weak dummy"),
+                  [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                }
             
-            if game.Players.LocalPlayer.Backpack:FindFirstChild("Ruby") then
-                  game:GetService("Players").LocalPlayer.Backpack.Ruby.Event:FireServer(unpack(args1))
-                  game:GetService("Players").LocalPlayer.Backpack.Ruby.Event:FireServer(unpack(args2))
-                  game:GetService("Players").LocalPlayer.Backpack.Ruby.Event:FireServer(unpack(args3))
-                  game:GetService("Players").LocalPlayer.Backpack.Ruby.Event:FireServer(unpack(args4))
-            elseif game.Players.LocalPlayer.Character:FindFirstChild("Ruby") then
-                  game:GetService("Players").LocalPlayer.Character.Ruby.Event:FireServer(unpack(args1))
-                  game:GetService("Players").LocalPlayer.Character.Ruby.Event:FireServer(unpack(args2))
-                  game:GetService("Players").LocalPlayer.Character.Ruby.Event:FireServer(unpack(args3))
-                  game:GetService("Players").LocalPlayer.Character.Ruby.Event:FireServer(unpack(args4))
+            for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                  if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        v.Event:FireServer(unpack(args1))
+                        v.Event:FireServer(unpack(args2))
+                        v.Event:FireServer(unpack(args3))
+                        v.Event:FireServer(unpack(args4))
+                        v.Event:FireServer(unpack(args5))
+                  end
             end
+            for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                  if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        v.Event:FireServer(unpack(args1))
+                        v.Event:FireServer(unpack(args2))
+                        v.Event:FireServer(unpack(args3))
+                        v.Event:FireServer(unpack(args4))
+                        v.Event:FireServer(unpack(args5))
+                  end
+           end
             
             task.wait(.000000000000000000000000000000000000000000000000000000000000000000000000000001)
       end
 end
 
 function giveglove()
-      if _G.slapfarm == true then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren() -- clears the backpack
-
-            local gloveArgs = {
-                  [1] = "glove8" -- Ruby glove gives 5x slaps
-                }
-
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gloveArgs))
-      end
-      
       -- Glove Tab
-      if _G.glovename == "Brazil" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Brazil" then 
             local gargs1 = {
                   [1] = "brazil"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs1))
       end
-      if _G.glovename == "250" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "250" then 
             local gargs2 = {
                   [1] = "glove1"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs2))
       end
-      if _G.glovename == "Error" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Error" then 
             local gargs3 = {
                   [1] = "glove2"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs3))
       end
-      if _G.glovename == "Overkill" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Overkill" then 
             local gargs4 = {
                   [1] = "glove3"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs4))
       end
-      if _G.glovename == "Backrooms" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Backrooms" then 
             local gargs5 = {
                   [1] = "glove4"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs5))
       end
-      if _G.glovename == "Hour" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Hour" then 
             local gargs6 = {
                   [1] = "glove5"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs6))
       end
-      if _G.glovename == "Moderator" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Moderator" then 
             local gargs7 = {
                   [1] = "glove6"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs7))
       end
-      if _G.glovename == "Golden Hour" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Golden Hour" then 
             local gargs8 = {
                   [1] = "glove7"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs8))
       end
-      if _G.glovename == "Ruby" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Ruby" then 
             local gargs9 = {
                   [1] = "glove8"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs9))
       end
-      if _G.glovename == "Money" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Money" then 
             local gargs10 = {
                   [1] = "glove9"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs10))
       end
-      if _G.glovename == "Smile" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Smile" then 
             local gargs11 = {
                   [1] = "glove10"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs11))
       end
-      if _G.glovename == "Buff" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Buff" then 
             local gargs12 = {
                   [1] = "gym"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs12))
       end
-      if _G.glovename == "Superman" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Superman" then 
             local gargs13 = {
                   [1] = "superman"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs13))
       end
-      if _G.glovename == "Saitama" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Saitama" then 
             local gargs14 = {
                   [1] = "saitama"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs14))
       end
-      if _G.glovename == "Super Banana" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Super Banana" then 
             local gargs15 = {
                   [1] = "banana"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs15))
       end
-      if _G.glovename == "Sans" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Sans" then 
             local gargs16 = {
                   [1] = "sans"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs16))
       end
-      if _G.glovename == "Smite" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Smite" then 
             local gargs17 = {
                   [1] = "smite"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs17))
       end
-      if _G.glovename == "Super Heal" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Super Heal" then 
             local gargs18 = {
                   [1] = "superheal"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs18))
       end
-      if _G.glovename == "Golden Katana" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Golden Katana" then 
             local gargs19 = {
                   [1] = "katana"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs19))
       end
-      if _G.glovename == "Holy" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Holy" then 
             local gargs20 = {
                   [1] = "holy"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs20))
       end
-      if _G.glovename == "Spam" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Spam" then 
             local gargs21 = {
                   [1] = "spam"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs21))
       end
-      if _G.glovename == "Gunslinger" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Gunslinger" then 
             local gargs22 = {
                   [1] = "gunslinger"
                 }
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs22))
       end
-      if _G.glovename == "Reroll" then
-            game.Players.LocalPlayer.Backpack:ClearAllChildren()
+      if _G.glovename == "Reroll" then 
             local gargs23 = {
                   [1] = "reroll"
                 }
@@ -280,6 +259,9 @@ function tp()
       end
       if _G.tpname == "Church" then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-169, 327, 19))
+      end
+      if _G.tpname == "Secret Obby" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(96, 316, 44293))
       end
 end
       
@@ -420,7 +402,7 @@ end
 
 function admindetect()
       while _G.antikick == true do
-            if game.Players:FindFirstChild("DevOfficiallyReality") or game.Players:FindFirstChild("itz_galaxymidnight10") or game.Players:FindFirstChild("MONsocool666") or game.Players:FindFirstChild("almondandraisinaaaaa") then
+            if game.Players:FindFirstChild("DevOfficiallyReality") or game.Players:FindFirstChild("itz_galaxymidnight10") or game.Players:FindFirstChild("MONsocool666") or game.Players:FindFirstChild("almondandraisinaaaaa") or game.Players:FindFirstChild("sapotals2") or game.Players:FindFirstChild("25boi1") or game.Players:FindFirstChild("Emanman2014")  then
                   OrionLib:MakeNotification({
 	                          Name = "Admin Detection",
 	                          Content = "Admin Joined! Kicking player...",
@@ -428,7 +410,7 @@ function admindetect()
                           	Time = 2
                        })
                    task.wait(0.5)
-                   game.Players.LocalPlayer:Kick("Admin Joined. Kicked to avoid ban")
+                   game.Players.LocalPlayer:Kick("Admin Joined. Kicked to avoid admin")
             end
             task.wait(0.1)
        end
@@ -499,6 +481,11 @@ local miscTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+-- Labels
+glovesTab:AddLabel("Note: You must OWN the gloves first then you can duplicate it.")
+titlesTab:AddLabel("Note: You must own the title first then you can use them at multiple times and create different colors.")
+titlesTab:AddLabel("Some users or players are able to use the A-K title without owning it.")
 
 -- Toggles
 farmTab:AddToggle({
@@ -579,6 +566,13 @@ teleportTab:AddButton({
 	Name = "Church",
 	Callback = function()
       		_G.tpname = "Church"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Secret Obby",
+	Callback = function()
+      		_G.tpname = "Secret Obby"
               tp()
   	end    
 })
@@ -793,7 +787,7 @@ glovesTab:AddButton({
   	end
 })
 glovesTab:AddButton({
-	Name = "Reroll Gloves",
+	Name = "Reroll Gloves (BROKEN)",
 	Callback = function()
       		_G.glovename = "Reroll"
               giveglove()
@@ -831,7 +825,7 @@ miscTab:AddButton({
   	end
 })
 miscTab:AddToggle({
-	Name = "Detect Admins",
+	Name = "Kick when admin joins",
 	Default = false,
 	Callback = function(Value)
 		_G.antikick = Value
@@ -847,7 +841,7 @@ OrionLib:MakeNotification({
 })
 OrionLib:MakeNotification({
 	Name = "Changelogs",
-	Content = "Fixed Instakill, fixed teleports, added kill player textbox",
+	Content = "Added notes and warnings, more teleports, fixed slap farm.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
