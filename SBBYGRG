@@ -1,54 +1,72 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local b=sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ljHtzRRPeyHpNwpCHrNsnXtSRxmAfVCnlzKWqYztQclOSaEUpOYDdeYQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLw==')
+function nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(data) m=string.sub(data, 0, 55) data=data:gsub(m,sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('YOTSEficciJMyxNKtRUfVHSydQjkMFwmOTYyoBIpnUHcLUSMYOdoEgb'))
+
+data = string.gsub(data, sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eiVRGtpqZYuczWAAmlPBLvzFGNpmyGDyTtZIszbOyMbVAzyuGTNFeWMW14=')..b..sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zoEfvOgVcLFivDdmSBtqSMCFQthpgXCLBMwhLpRZxlMdhGJoKKRddpbPV0='), sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jaxaPMcbfgybriHFQzQlLoGFVxmoyVmhVUcqWEYcuoAJiRdeTxJgTDI')) return (data:gsub(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TRLXyYogZLxprytShCvecIWUMIfUYlehMitpVwrJgFvfVEqySAytdjiLg=='), function(x) if (x == sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('EbWLkUqWLkZgzFLXdGhaOACXhleWIFFcjrUWMkUyjPINCeYSuttCaMlPQ==')) then return sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pjkSLCZvnDKEJbkixrdLLlzSBQyUKNbAFybLgrsUzogkiWRSVqkhOdo') end local r,f=sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('bnPYcIncmTvmMTLUHuXEiUyoBTvwrPYSXRaPyuJjCoKRJxATxHTFMsh'),(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('JucpqIMQSxTgvmFuEteHdQmvwyaxcfPdZvNEtFKLAMXhGqYWXUJsaBmMQ==') or sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AcMgifuoWzwMJYmCVHhuHHeQNswsLVuwMcJrLFrykOihepWHsjhxeRSMA==')) end return r; end):gsub(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('JAWCDDTcgUriKZCGXxCRXHEzwfRhpYemiRLgHemzWJTfxnWvgxigfdrJWQlZCVkPyVkPyVkPyVkPyVkPyVkPw=='), function(x) if (#x ~= 8) then return sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('njVKULJJDKNsLjBUFjINnwtOOcDkgAkYlWbpqfByXOInatebWHMvuLV') end local c=0 for i=1,8 do c=c+(x:sub(i,i)==sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DhSeWzTiRWYCPNyblrumBmBXJMAjshlyQSWlqJnLxrocYhalCUjxfkLMQ==') and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
 if game.PlaceId == 11680140533 then
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ExoticHub | Slap Battles But You Get Random Gloves", HidePremium = false, IntroEnabled = false, IntroText = "ExoticHub", SaveConfig = true, ConfigFolder = "ExoConfig"})
+local OrionLib = loadstring(game:HttpGet((nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DwyxJUrufXUuRctUuZpvSkSPzEjCHHgwHmKBIVKpchfPydDIVwCBfRcRlRXbFJZekdtR0diRGdhZEZhZ1JRblV3SVBobGpYWkxPc2hzRnpYQ2pieUxGWnp4c0F6bGJ5VmFIUjBjSE02THk5eVlYY3VaMmwwYUhWaWRYTmxjbU52Ym5SbGJuUXVZMjl0TDNOb2JHVjRkMkZ5WlM5UGNtbHZiaTl0WVdsdUwzTnZkWEpqWlE9PQ==')))))()
+local Window = OrionLib:MakeWindow({Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lGRRTdEHbIhjjYPvTHwioBffSqXLEwJxtpjlYUMTPpmEwCSWRcfKcaGeHJQaW1LR2lSSlZMZkFZZGFUelVtTGRuUVVKTmZwYmloRFJxRlhYRWNCVWFqaXBVT05rd1hTU1JYaHZkR2xqU0hWaUlId2dVMnhoY0NCQ1lYUjBiR1Z6SUVKMWRDQlpiM1VnUjJWMElGSmhibVJ2YlNCSGJHOTJaWE09')), HidePremium = false, IntroEnabled = false, IntroText = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BDpQhnhhyBktstGByJqDjLYEmvZetpezIgbhNHyejABDnsXDCIgjZlTVGZFTmVYZkJpWlZrV3R2SmdPQWNqZlJmQXRlaFJYemFWSnRIbmJyd0NNRlJ2ZFNUZVNVRUVrWlJYaHZkR2xqU0hWaQ==')), SaveConfig = true, ConfigFolder = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('nEyXqCqDNXINrTJbuRWNCzYGgMYpNuBlnDkNYMNKtgznJtxmxJULWXudGJwT0hMT0VueHNlTVFRUUhmSURhenJlY0VXU3FRZmlBdnp4b2VQeHN3d2dNZkxMdEpBSmJrVlJYaHZRMjl1Wm1sbg=='))})
 
 -- Values
 
 _G.slapfarm = false
-_G.tpname = "Name"
-_G.titlename = "Name"
-_G.badgename = "Name"
-_G.glovename = "Name"
+_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RDcLOaoUDGhGRGJALfvfwMykutZxCuCwNKFTqCeEKXgxCHfLULbYfbjUWdKa3RjV1d1RUZYcVl6QkJFaWN1Z1JEWkNvTHdXbGhNeU5qUWdWZEJybHRub2JkR2hmYmdEQ1RtRnRaUT09'))
+_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RqrbNNBNmqCJjaBdrnKhcHIZXXHWTGmLXqZLopsJreIWjGjtdUWXUNTRmJOQ1BqZlZEd1hHbGJDWHVKcldZQUN1VUdoUkRGakR2dXFpam9mVGJUcnVPZkJPS2lMdENrcFRtRnRaUT09'))
+_G.badgename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DMDUJcjpkbcSIlVrrVxUxmPWioWDLOLNjzXWmGAKClmEsCtBStVEjXpWFZvb1NrcnFOT1d1S25SR3p2SGxPS2xQbW5ZTGFLc0Fpa2RUdVVBY0xOamlyZEtDd3JxbG5KTlRtRnRaUT09'))
+_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XhSDxNBubULYghbUGzjSBdaiIpXobhexvwZBhlEEViMOgWroqxZLiUzbHdqdWtBYUdLdUZ3cklsalBnc1pFQVl0b0JPR21EanZVdnF2Y1JxaEVvVEx6TXRUc293ZnhvQVRtRnRaUT09'))
 _G.slap = false
 _G.antikick = false
 _G.nolimit = false
 _G.nospeed = false
-_G.killmode = "Mode"
-_G.plrname = "Name"
+_G.killmode = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BJZYzrGIJXJuonAjsfkVSFebAYZwiDIOSrKoXMDUkxKHJriCSPACMDzaE9HaElSTnduZENiYUh0eUpZS3BYaFNPYll0eWNuc2xYZExDRWhMU1BtaExydXJ6dmFDY0llZFRXOWtaUT09'))
+_G.plrname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ElGaFNtjQXqlozLACtrDkMIrUxemGCdxpRrXAlONTDfwskMVmJxnwEMSnBJZ0xEVG5BUnpqV1poTFhWaUp0TWlieUNBVnhMZEtFekVhb2dtcGVFS1RvTmhoVnZwU0tGUVRtRnRaUT09'))
 _G.antivoid = false
 
 -- Functions
 function slapfarm()
       while _G.slapfarm == true do
-            local plr = game:GetService("Player")
+            local plr = game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fmNqZUwKorhnHuIAMmIGKTqHtJrDVPlVdCLZpZeCjuAzVDhXeJRAyhyUG9XanRkVllsek5TenBldkxNWUFRZHZJcHFxY0dqcGJTa2VnQ0NwSk1DRHhYb2R2Sk1HZmd6S1VHeGhlV1Z5')))
             local args1 = {
-                  [1] = "slash",
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('STeJKlOCRLsKWXjOsUrqOgKeJUbeMQwtzgKnuyvHrjdNcuxVJqBasSLc0FnbXNuemRrYnduUWhuSE1CUE9nTnluR1RFZ0hKRW1xbnNWTnFKc3Z2ZFlRVk5EckxTZ0lZUGMyeGhjMmc9')),
                   [2] = workspace.DonoBoard.FirstPlace,
                   [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                 }              
             local args2 = {
-                  [1] = "slash",
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('NoAVPzdRHsPIcZQcJQaNQTiROflwUvvxXMTfuoKNBgVRhhQuLnkNsoJcmh1UmZwYktOWWVUaklNWEpRRHFSZFphakZBRVZQQkVtUU1jVWZoaVVXb2FCUE9lZ3NrdUJzc2MyeGhjMmc9')),
                   [2] = workspace.DonoBoard.SecondPlace,
                   [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                 }              
              local args3 = {
-                  [1] = "slash",
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CvzsWAZYtKhvxlQIPzOfkdpXOGMaKzddvaDwtGskbvTgDGGaCXhrusGV0ZVQ05WcU91eHZvT2hSUndSZEhDdUVkT2FDRHFsQVJlb3FubkdrYXNIVnpOUkVGWW9iUGJJcGMyeGhjMmc9')),
                   [2] = workspace.DonoBoard.ThirdPlace,
                   [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                 }              
             local args4 = {
-                  [1] = "slash",
-                  [2] = workspace.TimePlayedLeaderboard:FindFirstChild("First Place Avatar").Rig,
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VwmkNSVmOUcdNwznqoLdYeeBFgnRbOpexNfdfYqcRVPyCrJRaeFdZaxS1doZWlKV1Vwb2hsZmtBeUtPeHhMVWZIQmpjc2Z4RVZNWGhiSkhsc3ViQ3VZelpiaUtaaGF5eWMyeGhjMmc9')),
+                  [2] = workspace.TimePlayedLeaderboard:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('kaCCMpCOwcGlJFxpaNoGYJLBFpddyBVigyLmeViXfoanhWlzXMQXxZOd25DanlRUFpCSUx1TWJVZ2l1RWVmY1pzdG9qSEp0c05qc2xnSklyTGFOcGJ3REJMdXdPSVJBUlJtbHljM1FnVUd4aFkyVWdRWFpoZEdGeQ=='))).Rig,
                   [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                 }              
             local args5 = {
-                  [1] = "slash",
-                  [2] = workspace.NPC:FindFirstChild("weak dummy"),
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('mHwhsuRpvBzeAMaUmvGeMcytlJOuxLDBhdzBBktpQUiTCBIKkvIWoLXSUxJVnJMS2dZbHh0VGRjWlJHYlR0T2ZDa0VpV05ORk5vb1h2WGZtT01yTnVuS3l0eWxvWUlndWMyeGhjMmc9')),
+                  [2] = workspace.NPC:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('huccalORgYKofAxBXMLjGXjFQMLKbGfxIzkQIBhYyZJTYfxHTjhLcDGZFRQVkFvRWxPTHR5V21zU2dyc3d4ZVlCdk9uYUFNREZNaGdjZW5DdGNPTnRFT1dLU0ZXeFNlaGQyVmhheUJrZFcxdGVRPT0='))),
                   [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                 }
             
-            for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
-                  if v:IsA("Tool") and v:FindFirstChild("Event") then
+            for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('SrjUCGleZUzeqrGhnhgaNgkjuXwAPetIgjarWopSbwDTLqpPLHhmtLxeERyUUVVT2N5SUx4c1ptaUlITnZWcmtNdklTaWt5WUJxRmNTdGhicHdlVnNEU0ttU0tob2t3Q1VHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Backpack:GetDescendants()) do
+                  if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('yMeAUGqyYMDkHFrABpIzLVRxVJzHSKbULVyofhjAsyrqlzzmTIXQvQfUnpJSUtJc2N1T09sVWh6ZGh2ZVlKU0hXd0ZCYnlmVmhlQW1zcHhLdVB4a2FLUHpZRVBTZXJ1U1ZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eDgTCzhPzzLPsMLReyjiOAbDDvjJNAemnUKuIlHEYjeaarbqcLzQdbgeE5rcmVFQkxER25VYXFtRnhRS01BQmR4TGxxbnRNRnh0Z213a2xLQ1dpZ3VhRWd0cElqWWJ0cFJYWmxiblE9'))) then
                         v.Event:FireServer(unpack(args1))
                         v.Event:FireServer(unpack(args2))
                         v.Event:FireServer(unpack(args3))
@@ -56,8 +74,8 @@ function slapfarm()
                         v.Event:FireServer(unpack(args5))
                   end
             end
-            for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-                  if v:IsA("Tool") and v:FindFirstChild("Event") then
+            for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ozOVHfxfpjfltcqjkFywlxCAkZRjBZpAktIxwWnPmpKOxswOCyIcKJxRnZmTEZyVEJOUUlPWk5ETVRuVE9FVnNuU3d1SnVmUm5tS2JJdWxqaFhPS2FYU29VYmFWdXpBVlVHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Character:GetDescendants()) do
+                  if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lbrTQzZlztFKpxOutNnbpqpaDDSoODnthTNlIBhHbeWvzlmQNkyHqSPb2JCSEVCZ0FMS1lMeWlqZVFOeG1NVExCY2NycWVkS0Z2VWlaTkxIYk1NZkNoaUxiSkphSXlHb1ZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XitGSKalsWCQqKesacCrhchveGbiwaYJWFIJJTKsVDDIDzSUfrWPlQXeVNrZmJHaGdyV2podnZJVE1BR2hqaVFCcGp1bHprekxidnJEaExwbnhuZE1sVWRVclVKc21NclJYWmxiblE9'))) then
                         v.Event:FireServer(unpack(args1))
                         v.Event:FireServer(unpack(args2))
                         v.Event:FireServer(unpack(args3))
@@ -72,273 +90,273 @@ end
 
 function giveglove()
       -- Glove Tab
-      if _G.glovename == "Brazil" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('NGzhBMxKOySPolJjSUefowXjquPmdvwfTUxrBqsngSCEIaxgflcbjJYclN1bXFOSEpxbXZ2UlJwRmJkV0ZqUUNCcUFYZ0JDaGtDYnhSSm9FZ2hWaXFhZ1dRQmNkVkltZVFuSmhlbWxz')) then 
             local gargs1 = {
-                  [1] = "brazil"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ReelVSSWqJwRzsFwzOJgJWBlrzVeSYUmzwVEObFWxBsdKPKboyVTBTbRHl2WmduWUZVeWZ1WUxRWWFVUFlvTlRQRUdnZEllZ1BoUmNvcXlIYUluWHBnd016d2ZPc0x6ZVluSmhlbWxz'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs1))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('gXkurNNDuVbBTOjDZpZUUDLuQoZQvQaPInRssyMguOlwqjKuvArcamnUUR3SEJxdk16dFJmUVVUTW5LUHRFR25lYVVaVHpTeHNuZnNHcURhQ0J6cENVZGxnS0JHdFZHRFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs1))
       end
-      if _G.glovename == "250" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('LBmYPPXPZAbKAknmnmwpXWvuAvlQnnUGlelKbrXLgCkKdfoQlWjDwOjUWdLcWtmVE56TXB4WVZvUGRTcWh3QndXUWtEbnVkWmNCYk9IQ3R6Y1FnbW1ObllsZ2lraHVSUE1qVXc=')) then 
             local gargs2 = {
-                  [1] = "glove1"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ZRmkWWopmXbGruwzwAMCWKxrJcupadChPtqnZyQOOUvZNHMQUxsjtsJZmdVQkVNekthWFpGRklmb2NmZUJ6bEJpVVhRdGlqb2Jwc0lwenR6TnF3UW5TcnlHZ3hFY0pTaFoyeHZkbVV4'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs2))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('dOnXepOENxdEmqwvHznAhGhxOvsdkoazqtLViBaxruoPtWDMtoDGvBtWklNSWNYRWZEb3J0WVFUQUl6b0JrUnF0YVZ5a0NDQmVlZUdPQWhMeXpZZUJrY2FWRkl6RWRTUFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs2))
       end
-      if _G.glovename == "Error" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pmaBRoGULmSzkFVbfXPxeTuyZbitAEHvHKoUOSQKjejzYaqXBrJRPTERGp5TkFvdnNnVEFaUFRDcWFoemNQZlN0dkZPU3NzbERrY2JXYUhVWE5taGlDUkxGaVZ1U1RJU1JYSnliM0k9')) then 
             local gargs3 = {
-                  [1] = "glove2"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('SnDYIdEQbSqceXGwEYFZkbVzmnfGqYvdbCzAUYiAsunUdeKQSreJshcTXpUaEpQVmh5cGtqVnR0eEpGS0JvcEdqT0pEZERtTFRodE1pZnhoT1BXSGphRFZ4RVJja1NTZFoyeHZkbVV5'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs3))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('EAXSpTnSjRZdXkonuNjqRdcqgLyZXKoJqYGZGHsMgCuUuQJIPrNRMNpZFRxTm1rbmVJTVltaFZCZldDeENYb09nV2RVV0RzVFdYb21jTHh3VUZhdnJ6eldjZGlqYkx6TVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs3))
       end
-      if _G.glovename == "Overkill" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KeMorSccpBRWanjUPuvRfGjicuRPbkUjOkfhUHSySKQAPYGmbToLWkUc2ZpaHhCZGxzd25hcFFwZG5RUVBIVHVSYU5tRk1JUXlPelhSVHBOSGVIY0hvQU1scW9OdFRHeFQzWmxjbXRwYkd3PQ==')) then 
             local gargs4 = {
-                  [1] = "glove3"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GsznmqihVBWJEjTRMjaFpBghViEMCzggdtAlfOIXBTIGGDtXdKJTuFAeFRLaFBPeFRkc2VRTktaeWJHdEtXbFJ2S1RFU2NzbmZyRkpPZExZSHdkdkhqeHFCYVdBTlZlUloyeHZkbVV6'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs4))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('dywIfrDTqjtNHquCiVLgtMtNdypCpbhaBhViORKKDfBoQjlwUyaGIZVYXlYYW5nY0RSRE1BdXh0a01ZT1NOZUFDdUdJS2d0bklvTnNVUnFsWXh4ZHRJTUR6RFBtWWFxRFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs4))
       end
-      if _G.glovename == "Backrooms" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('xcQVRwnAGWEGVxiETijqwWGmEmtCHsFIDZmCWWsEFfkJQktSFLHDpbhbm1lWGNXYm12RlpXVm9mdXNwSnpQbUNrWGZlbGdEclFaRHFFRVJXRlVNd0poQVNTcmpvUnhUeFFtRmphM0p2YjIxeg==')) then 
             local gargs5 = {
-                  [1] = "glove4"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XSnxhYrToagAEICEGAwZNcogELLxmzpIaMtMbzCaYnTTqcJwtAARPWHc0lNQ2piQVFOZlRoR29UbUxKb0dWRE1BR2NqZ21yQUd1ak5XZHFXZ2hCbU5mV1lmbFJQeEpZZVoyeHZkbVUw'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs5))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('woRdsUzYQSRnRDkkaedAZqPnjbIdJspLrfeDeMJdugjYToDXyVizEGLekFkd1lPdHpnYmVaa3hFa0hTTEhISnRxU3NucmNVelV1d0RVelN1emNnYmFiTklpUEdDY2N6c1VtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs5))
       end
-      if _G.glovename == "Hour" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FuASDAvKNyoclmgMzZQUlOUrYAdjwUhKjKfQZyPhsEAYLeuUeHTUxEoZ2dUbGJPR3hKTnZEZFRHR2VjSnVNZkNCamxibWlzbHR0TkJJck5xWWF3eUlRTEx4UE1ab2hxU1NHOTFjZz09')) then 
             local gargs6 = {
-                  [1] = "glove5"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('cBSzPDJYrXxfmOlpKKnbeAFyUxUVgyWlmlSBCznaYVgqvXLIDvxyihZYVdnaGN5Z2JOQnJ1WlBIU0xjWEJ3SmtEb1p2YUNodGRaVmNlWGZtUkdGa2Zoend5a3FJbVJmdloyeHZkbVUx'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs6))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TyAwhXBMiTIyrjqMgGpEkfTCirosNctmqxRwaEmFmplfRnWAWtFkuuMYkl6ellISHB4ZkxNU3FvUUVuUVV0QWNxcGNYVkNTdU5rb1NUV3ZtUHVUSVhNWWRlWWJibXhmc1VtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs6))
       end
-      if _G.glovename == "Moderator" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jEWlsnCCvDecVViQzdzeMYIFNVmCMkiAPPxdZdXjgLrCtaRctwdCOVbQkZKeHRVZkhuSkFodk5uUkRWT3BoQlpMRnV4alVOdm9HUGJ2emdhdkp5clBkdGdpbmlldFdjVVRXOWtaWEpoZEc5eQ==')) then 
             local gargs7 = {
-                  [1] = "glove6"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('WadnnlAIFEcjnCJlCrdRqbAcqseDRIzpVrakpPrPNTipowoTSuvdDvVUXVld2xHeXNZcEV4QVBjemFlcWNjR1lWZkN5SHZwR1RXY0VzTVB2bXdlUmpFR01lU1dnWlhHa1oyeHZkbVUy'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs7))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('HOSsdERxGypCDOqxPlkQPnMYFeRUYgFoCWxtZEITTaDRXqylWTkWrpcSGtpQ3JLbGtCUk1ZZ1ZFQm5HeUdFSWpXZ1BrRVBKbUFGU2Z4U1ZCVU53R3FDTHNMdW13Q1R4RFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs7))
       end
-      if _G.glovename == "Golden Hour" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('WsZlKgtPJmurewsGlGIHKXBLrMuLKiFepmFgkhFOKXsladUmhKmxSCjRHJKVkNBdVpCbEFjYUtIbVJ1TWVzYWJmbVlXU1VDSVpieEZiREducmtwcVlUeG9JUGp5dUltblIyOXNaR1Z1SUVodmRYST0=')) then 
             local gargs8 = {
-                  [1] = "glove7"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('asVgGhIJcgEIEUQRKYRbUkGATVgsUNlVZyTIyRZmdAoxCelHvgTBygmcm9Zd2NiV3JtU0liV0twcnZ3ZFBwclZYUk9RSGNnSGpTd2VleWd1Z1VLekR1Wm51SXNsUkFScVoyeHZkbVUz'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs8))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('vblAhGLfDqXhEnwcqfPjhNsAnUHUjSFxQBXvuFmiyRZfgVveWeyPKhld2pDZG9uT0lvWEhrSnJUV0h5SldGb3ZFYm1tVUdBZUtuVUpsT2tPY0lCT1ZCcHh1bHhBd3FrYVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs8))
       end
-      if _G.glovename == "Ruby" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ARkDZIJyeLNImaQTmGgadyOsGRTRLwobgomQwkXfBpUfxoMRbMRKPaDVGtya2F2aUlKd25ubHVwZUxyTGVZTENDU2lSSllISHVtU3pQTU9TdHpoTHZBUnVVc2tpY2xDQVVuVmllUT09')) then 
             local gargs9 = {
-                  [1] = "glove8"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zHLgyNPPDKqixKCWpviZxowXAqyrZsngRLeFOEfhHHEGPhGcQSXnMYFaHVYZWZjT2d5cXNJUWFpVXVIT2xKanZhWFhHektrSmdwVkpRWFZEaktlTm1Md0ZCV2JtZGFUTFoyeHZkbVU0'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs9))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AkSagrdbsmHWdyWqisfBuBJwqFcRptNkIosCBDzEHRGVemFhiaXuSDhTkVLQWFOUVdDbU5rRVNzRXlVdHBiWWNVYUhFQWFsVmhUWHRrSmtuYkRQa29yZWZCbXZERFBGWlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs9))
       end
-      if _G.glovename == "Money" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('JeEspqxACPSaPYmZmtiPgoaVeLwhlNNlSBoXIuSHhxZtCKHGIQNFcBfc2JTVFhReWtPT0lIWU1tVG5XZ0NlR3hXdnB2bUVmWnZiZldUUHp1RVl5SWJqWFJ3ZHlZbmZta1RXOXVaWGs9')) then 
             local gargs10 = {
-                  [1] = "glove9"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('JYaWKnQmdlqtQSuxNyjzzFTtdIuByHJbxrLbhcPOewsxncdpKcqZBOyU3VTQUNhVVJRV0xXcnBWdElWaWt4VVJOd1VVZVNEWkJxSUZVWnBhVFpFQUZPWld2WER1alFiQVoyeHZkbVU1'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs10))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wseeaadWlLVjyDFNKaxJtMpxBIVZYeyzBsvhmOIzNRGFkCSyiIMnGzfVWZUT1dHd3NXSEZPVWRSSEltTEVrWnVqZnNwdEh4TkVjSU5uUHRNY0llYWxBSlNIUkd3V2RzWlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs10))
       end
-      if _G.glovename == "Smile" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('iQYEBWvoqNnHWEEybpxrhdvJdWaMcRtSkAdefLCjMiGBiiUgFKihZFsb0RuVmhzWnNGU1ljc255YXNTSFRDSldLUnNQT1NxclRVY2xQWkFPc2FHWVdjZGl6c3NwbmZDZlUyMXBiR1U9')) then 
             local gargs11 = {
-                  [1] = "glove10"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ThIhXbDlvorbEWVxAMEUnZRXrZIDhAgIFfYeJMGEamiNPDKllBPkaandXJGeUJ5VUpHV2xJYWtzR2hPZm10TWtPWHJ1Y2N1RUtha3dNdlZiYWNNUGlaTktRaG1GbU9pZ1oyeHZkbVV4TUE9PQ=='))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs11))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('kHVJHusBxxvLapKAUMmdOzhVFWYchYLZLweGldeUCCMphbKkpfJyEQxa29iSkZOa0tEWU54WXhLamF4TGJhU2hhTVpzc0d3bmtaTGlwbGZOaEN2dFpHT1pVUE9QZVN2WlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs11))
       end
-      if _G.glovename == "Buff" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pTEztVJncoqhgjbTDSJzqnyicTkGyPkIHFIHqNyGnWftdKlujvzFmMucnByUGJaY3ZxeERhc2hxcWZ2ZFN6V0RHTlptZGpoSk9nY0RJYmRpYndQb0NnQVhCaldYbG5uZFFuVm1aZz09')) then 
             local gargs12 = {
-                  [1] = "gym"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BPvluZfUgYbtpUJodlzufYYrimbFGjimoagCbKyEsECvOMhJpLPVUyldXJjSmVNQU9sRllyQ3pQV0tqUGdaZmttTnBWd1lTaldZTVNKZmNXc0Zna1ZaeE1PbmFUVGZLclozbHQ='))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs12))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('WoLIbcskOsXRKArTOdKvLZRYkTJHEuHvUALcSTiuXASJjQutypstkMRellteXdibXBaVWx4Y1hETExzWG11b2lZeW5PZmtYYUR4YVBTclV1WWRzUmtjT05FWFlSeHZlZFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs12))
       end
-      if _G.glovename == "Superman" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KbDfEicIwqESbimTQIONCXWVpjpHfjOpiAmQyoeKMymRGiRgWXMhYiZaEV5b1Z2b25ma2tOcWNReHVBS3FYaXJhSGlqcm16YUVlaHRZU2VGclFIVnlUbGJ1cmhkbWNsQVUzVndaWEp0WVc0PQ==')) then 
             local gargs13 = {
-                  [1] = "superman"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('kzXDkoynbxLiBblncOuANKxcZGmTUEpBkrbZtvCGaCZpCSyfRLmksVCSEV0TmNodGVhcnBMa29qRHNDem5NbEpnTHpjQ0hrUGZPaHFsS0FJUFluaW9ETU1VWmR3RVpFWWMzVndaWEp0WVc0PQ=='))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs13))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('OAeRIHoCzihiMWNQRonJAywDggppJTZQGurMVGHhXUvuKCxPFDmOrZDTFZDY0NhR0ZHY2tBbmhKdVhteEdod0FpUEVyWHljaFNGeWtoU2FiTVd0U1hCaU5HTldKT0VGVlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs13))
       end
-      if _G.glovename == "Saitama" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('HCNTNPYvUgDXClnumLcNLswPWvLZsfRKiGyNlrERcNCTNAIUxtUNTSqZnByUkdwZGVUdmVEcVBhZW1GbmV2TmF3REt1TkZHc2hXSlBrZVVOd2JPZHBMeFJuRW90S3FlU1UyRnBkR0Z0WVE9PQ==')) then 
             local gargs14 = {
-                  [1] = "saitama"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ZJKERFklOeUkbTVvwNgRqQEPGxbIoejwjxArbHqxdFBwegApRFoyWSed01XUFBpaGlhWEZjQ3FqUmd5amhhQ1paamtPV3pkaEdiUkRHanRxV0ZFenlMRVBVR3ZUWFhDZGMyRnBkR0Z0WVE9PQ=='))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs14))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('vTObyTnIfwyWVLRIApbJnJFSbkAMdUKqQdIVeTFeVgslQpRSHEEBJykVnpEUmZlTmt3dHBaT2hOUGZVeHZGa2FVZlVyTUp2b2tyVVpnZ0paWGR1ckRjaXNxUHJscHJHeFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs14))
       end
-      if _G.glovename == "Super Banana" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TzHsyapJIhypmEoleojdMlWmBVRXHcIMHliNZDUgFgjilImyWykrQpMWkpWc1JJQXp2cEZuQlNlU3VyaGxxS0lkTmdhT1VBV25DV1ZXT25mSmxuUlJ5bklZY3NDV3FMZFUzVndaWElnUW1GdVlXNWg=')) then 
             local gargs15 = {
-                  [1] = "banana"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('YsZIYvpTsUwHelffIkFXiVuRdaMUADCcBvBWKqCPgrUkyzalVBnNAuTRUZOeXhqdUpUSW1IWGZnckJCQnhFV0pXZUxOQU9SZmZ5RFhtRWJmY2pLQnlGWWRsZHNyUEVMZlltRnVZVzVo'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs15))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jROlTPpUwcqBJgdruTsZKVogEDBdVkBKWDJJjllZTQVlWpeXjuRseCQakFNTGNzTGVYTE1kaUpQZWJxbWhSZG5iTUl0dkpWUWVjbGFkU3FiZVJXbGZZTE5zVk1sV1ZwWFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs15))
       end
-      if _G.glovename == "Sans" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('vSdUxxdKYTJzwtJnDHHZpbIcpowarWkWlUiWEjXBJsSkhnEwAXSXhidS2dhaFZySlNyUXNxSlhnTVFYTk9PbWZCV2x3VWdCaEdkUXZvdVNBbEphWnJheFJCc1VjSHFpdFUyRnVjdz09')) then 
             local gargs16 = {
-                  [1] = "sans"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('LFhtFyyEozgxvbwmHBOvMhsWJSUBFfUnimFKCIwPkKajAaLrYQXVFvmeVltQXFRY1JOV1ZBR3lzcWxlV2tRdk9NYWRZRWJranlQYWFiUm1WU09ndUZydFVUc1JTSHVCcWMyRnVjdz09'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs16))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XwHjLPalsrxGWQHxTHISLdMHmAMRfkNbisdXziloDqoGvkJUIHtcKDjTG9MRklwalZFQ29YQ1ZBQ2FiVEpuQldTQ21WZ2pwV3JyUkFMZ2NKaXNxZUl0Z0FpRXNtdm9FTlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs16))
       end
-      if _G.glovename == "Smite" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('gFMRdVseRDpqjQkEWAjKHFkODeNdKMMydiPcWuqYAlrnmOWKjKHJoHwVEhLcU5QWVhPekNrVGlsS1hDTXJSYUROQlJ1RFpCTVZBR1hZYmxId3VOWmlHSHRZWFZIZFNFcFUyMXBkR1U9')) then 
             local gargs17 = {
-                  [1] = "smite"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('aioqYxHOVlhqRwmWYUqaZGUHwfaTiekxYojHsYOnHaNIFOpOgSyuAxySmdmR09GSm5jeUtrQXZNekhQeXZOSmtSY1FPekpLbmtjaFVGZ29EQkFXQWNvZkFKUUpoRGlsUWMyMXBkR1U9'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs17))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('iyVxccBESuWwImMqLGZjNSxImCjyHoXhxinqIJnrRGMevjegwtjGdekd0xXYW5NSUtjcVJpYmNhYmVTekRBVWVna21rWVJqTkdra290RlFhQlVQdU9lelhiU3BuUHliaFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs17))
       end
-      if _G.glovename == "Super Heal" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RvfGxgYpopBuQKiPEGdMedUUSyHLQEVpxcIFLAnxQIzHNmfqzEocMhaeVFXT0l6eEhqdmZSZ3pmYWNDVGpRdm16anJNek5MWGtzV0F2VkJsTk50U0JnQ2ZWT0RwaXJtTlUzVndaWElnU0dWaGJBPT0=')) then 
             local gargs18 = {
-                  [1] = "superheal"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('EVftRYJtOKMOqoCOKtIoQLyjDbnAAlsDCjkeKwUaXDGCdylCFfaJJlDY1pvQURKU1VCdkZ2dFpXUFVyZE1iUHhOa2VuU3hWUlBLbHJCc1hES1NYcGFHS0FoRXZqZklORmMzVndaWEpvWldGcw=='))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs18))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('cZXiUqyDNKiSyYXnLcvsmJRDnDSBckBTmHEgqfFkzIJhpicEFvdxPvbaURVbnRxakxQdkJPZGZGRFptQVpCZENUTE1seGphbE1RQnVEdXFVekt0Q1RUWHNSbmtReU1SeVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs18))
       end
-      if _G.glovename == "Golden Katana" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('cKrBxdmKmTasrbcBjjFDyxzJXnuBESkKVVusDbzfpAXAzQuaSXGExOcSmVSdGpCZkFpZFJ6bWN0VFF4R2N1VWZYaG1rRWVRcXBSZ3dLb1lLRnJoRXNkZVBTa3hqREdHTlIyOXNaR1Z1SUV0aGRHRnVZUT09')) then 
             local gargs19 = {
-                  [1] = "katana"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pLKQftRiWIetOXwuasJZdCcvAaUdiHWcMUqLGsKidehpLIKagsUFIjDV05QZUtwS2VlT0t2V1J5R3VWTmpRSmtvTnRJeHhDRktabGlObmFUalFZaFFvaGxpZ2R3UnF1QmEyRjBZVzVo'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs19))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('vivOgNLzwkhSuhMLsikMnnicmdZGcnTDjTYylcVFdlbsESYWXimzgVia01iSGxRU3hCbmdDd2tvY1plcGxRaVlzSWtlWFNDeWRyS0dmeEVXWENPb0NYdXVPdGZiR3F5YVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs19))
       end
-      if _G.glovename == "Holy" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('OdbrLCDydoMvsEeRMHVghACULOfZBhjyDOGkagDOkxjZyVqtbDfcpnkRnZXaGxzcUdreFBueFdZZWRBRXlFVHZ1Y01OakdvU0NNR2VrbG9CeXV3elBHUEZJcHhDd0VTaFNHOXNlUT09')) then 
             local gargs20 = {
-                  [1] = "holy"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('WNQJIhziVNfVrrDPKlOXTEunvYEWlxSZrBywNhTXmsECfkFdzDiDkVkdVF6REJPbUJQdWl2RnFTdlZkbmxHZ1dKQ0NaeGhvVGpNQ2xWaUFNSktMdGlheUFzdElIRGxqcWFHOXNlUT09'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs20))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('nvCNDIjXeGESKPdcgopgFDxfsktsOQhPbhaxGYKmkSgyLlpnkTnleVhVGhsWXZ4bkJUbXlkWGlkSkVnTG9CU3lFT2JJZFNVTW1UR1N2VU5rUFp5VVB2Wm1YUFlUY091VlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs20))
       end
-      if _G.glovename == "Spam" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KQoJjiGkDOqBIZiyDYVzJxxLFnPJVjpLpXMZkAUlDTAzwsPvTMIGOtZWWtGbUZrZENxTmlNaGtpZFlvSUdUUVZUeXRNRHNOV1RidU5IZUxPeWd1bUZiSHZhZVN6b0lIelUzQmhiUT09')) then 
             local gargs21 = {
-                  [1] = "spam"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('nGzOmfgiNPSLhJyEcxLCaJBynNMuCCfwvJCXchwgrUCBgeBoPltjZYhb2xjdEpwcUZQeWVYWWdWQmRheFJMbGxoeWdmeE9EdVpES2hKU01sUmJURHZyWmV3UlBYWmdReWMzQmhiUT09'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs21))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pmSbvDxVVNPiejHLKaeLMZUNkxyBoLcLzmOHNveVtLUiVRhLSGgHTCZaFpOUkR6bXhkcXlFcFVxY2pOU1NEUUpYSllRaXhnQ3BEbmlNQmF4T1lhcW1UQ3NsU1ZNdXJ5UVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs21))
       end
-      if _G.glovename == "Gunslinger" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('OetNiVvdGBhXIuwxwOVdiqoDfrtQAArsXvGeAOrWNsWRRDfOZTIPtqXUEVGeldtZ0h1eWhQR2xuU3lRZUJuRGFvTGtZUGFEamFibmNxalFQTmp2bGZHT1JTT3BIbFhpUFIzVnVjMnhwYm1kbGNnPT0=')) then 
             local gargs22 = {
-                  [1] = "gunslinger"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KFSRdGrqUOfoEWlTzvKLUGlbNYzsVXYlfUlLPAuNcSLllHILgNTxfxeQUp3bmtBVExpZ3pvWnJxQVNhRk54dmZZUFZYb1poYUpRTkVQaElWSFh1RUJ5dE93cGlJaldnWlozVnVjMnhwYm1kbGNnPT0='))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs22))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zJkKjygOboIYxemcIjFNSfUMILWHXhXvzkjOwSqmxgyLILUULKrJmnhYUZGaW1lQ3NKRHhDdmZEdUF6TG5qcmdjRHVNaFdZb3BBQ2pMS0tXaVdYSkVMbmVGVENQZEdkZ1VtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs22))
       end
-      if _G.glovename == "Reroll" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('cNfFAveqTUwdOaGulBakiLpAUCdxbEayLDmaXvhJbwkDYBMfIpEvnswbVppaVdYZ3RjYXB6eUdpbUJCSkJHamhuYnRwQk91bWRRZ2NwSGxjT3hEUFhLUWVHSWhYdktFYVVtVnliMnhz')) then 
             local gargs23 = {
-                  [1] = "reroll"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jNLTzcBqxQmXIwdJQGMZKGHbZHcWizQeIHHNPfvrEOEeuiYlgHXsIFRYmlQcG15QmtCZEZ5Z3piTVVhQk9abXVtR2F6dFdyc3pTckVoWE1aeUZnUHZKakJnbWpDREtSUmNtVnliMnhz'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wIsnLQfLHnhbaTVOUnZfCGwLgaCFGhWNorYKBINMQfeKrtOhfgCjKhrSVpGUXB6R2lvSE1sdUVBTWxkSkF1VEl6YXBFck5jRmdvUUFuWFpzUFlmTExiUEJMbVFnZExvbVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
       end
-      if _G.glovename == "" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('dwqzStDQDoVYegGCqNFMnOdHPkNzVxyqWrJRGKrNmhjSEliTcIxDYVHc1h1d0VpSEl5RFBVd2xJVk1yS3RaVmdya0ljVnV1Z3R1c3RsSG9lVGRnRUNUTXJ6dGdjaFBvYg==')) then 
             local gargs23 = {
-                  [1] = "reroll"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jzwmuIOwxrFbkgUesTQDyTvEMrUoVXdbrehYKQlpPrgqnAPYxWbsGAzdWtwUGNyWUxMdXdOWlBTQmt0SUN6S21TSXZmSU1xZFBGR1VmcFZ5YWpab1lVSnpNS1pSd055dWNtVnliMnhz'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wJeXEKACxsYlAyAFVHrCNxGoovHXslCoGwUjfXHczTNzHLzRfRlXsPJQ0tlWlNNYXV4YXpNbk9HTkxKTG1GQXhVVnpBS3Z6TlRYWGFXeFR5SU9jS05mRGxKYVhOZWlaTlVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
       end
-      if _G.glovename == "Reroll" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DUxtjNFdUAzvAepTaeXsoblSGEUDUuxtaDdVbSfhHKHswxVfvHGvTtKcHRkb3FDdFlpYkJ0cG11bE52U2lqQ0piYXlyY0VDRExmYmRtTVFmT2NqYWttWmd4RGN6aENGZlVtVnliMnhz')) then 
             local gargs23 = {
-                  [1] = "reroll"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('UnssMTjiqFBySYNSFCILanBPEcSsvLiAeyHLyIkPaoJYGMgIITrfRmvdnhRbnFRV1RUZkNKY1VwUmFnSEtnYmtKTnhha2tIWXdsSW1HVlNsakhJdWRMZUtwYVVOT0dpamNtVnliMnhz'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fgHvzWcpdCUwmUuAggPyKjMTLMOmYeeXWkFDfSlKNlYMynMPnmtUuqpeGpZcldhV1NsYXRMYk5VbWdkR1ZRWXNYRUNxZ1pyZWZBVEd1SHJNdU5yWHNMSHNBblRrS2JZS1VtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
       end
-      if _G.glovename == "Reroll" then 
+      if _G.glovename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eeXzQMYtsExLCsrigeZWxXkZLuCcPXSylAYivGvvlsnPKrcfnUqomcpVkhneGFlZWFuU2VGcGZ6WlBEZXZUek5sSnRYeHNjaGFNa0RaRlRLcmFkbmRRdlVEZGx4UkptZVVtVnliMnhz')) then 
             local gargs23 = {
-                  [1] = "reroll"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XlVIxcLKuanykSbKkGJeckYiyihLsegOfvMRBALsuExNBUqZooAOExBV2RickZOY2NSenZXSGl3eVJXTGRnQ3hRZ3hnT1J5V2xIWlJieEhJU25PckV1bG1zU1BMeXZnaWNtVnliMnhz'))
                 }
 
-            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GfGPgjqtxFqkkxQUPMywmASMUgwxbJHIGljNdeDfWUXywwkPECIGnymUXBEaG5lY1NKeWZtbkZ6VlVTdUd1QkNWUk5qUXJYWmxEdmxGck5JVFRPRkVRVFhFdVdsRERQeFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
       end
       
       --gloves: reroll, saitama, brazil, banana, glove1-10, sans, smite, superheal, katana, holy, gym, spam, gunslinger, superman
 end
 
 function tp()
-      local workspace = game:GetService("Workspace")
-      if _G.tpname == "Brazil" then
+      local workspace = game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KckPQztOffNnwzMWiwtNusEQxAOGsjhXVqeEPwwMEUqXRlgRIkRopVLaktSb2NvQWVwQ09Od09FWHJtYXJEZGpndnVSQ05CT2NOSlZiSFhBUUdqeGxxTmxFbXZ3cVhqRFYyOXlhM053WVdObA==')))
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zJqdHQVdxvsnyoFShtlVMzQoiBvWRwmUSbqAhVzoDqvHLPZilmEvGcOdnl2ZXJFUnBEbmRYTVdVWk5TcGluSFpORUJoY2JlR2NER1VJcXdZcGt2b0psVUVaRVhnUkhhelFuSmhlbWxz')) then
             game.Players.LocalPlayer.Character:MoveTo(workspace.BrazilPosition.Position)
       end
-      if _G.tpname == "Dimension" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('xYZAsJxVtMBRqGNeblRqJDftooOndxJXUuSXfELYYvlkBMdkUWoiYIeSWFJbGFKR3N3blhqcHJOSXNtV0ZMaHBMV2ZJd2RtSGtEbnZUcnVYcXJhdWFQWmt2eHZNYVF4R1JHbHRaVzV6YVc5dQ==')) then
             game.Players.LocalPlayer.Character:MoveTo(workspace.DimensionPosition.Position)
       end
-      if _G.tpname == "Backrooms" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('xnZmMWAKkEgYlpHoEkUoipzxbVMzPFRjUxuXzTRZCWEBSDVbJhojxcrUGlYRGpkZnNlaXdSd2RRSGZlakp0cmRlRXR1dEN6bVZUQktlR1VTYnpDckVoTlppRktlU2lDSlFtRmphM0p2YjIxeg==')) then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1465, 5177, -76))
       end
-      if _G.tpname == "School" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('iMOrfrsFopNleiFmyTPzJZneAFJZjWrSfAmhPwgCANWHSOqwAwNpNIMbXRGZ1NUc0dTSkJwTm5rUFhqc0pYU0ZMd0FJa0RtY2lzZ0NHVWluclVUTGVTbGZ4SFJNQ3lCd1UyTm9iMjlz')) then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(98, 295, 132))
       end
-      if _G.tpname == "Castle" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fCMBdHuptNcSQxacnqvhTQaPqXwNOiMDVxCvnMhuYfQlFQTOsyBZWYbQU5ZRmNxcUlFSGNvakJTemxPQmJRbGJkRURHQWxydmVhWmFJckhydURZZXF6ZHlJWXFNdFRuSlEyRnpkR3hs')) then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(104, 294, -441))
       end
-      if _G.tpname == "Volcano" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eLpdapywSEwIcDLPFoGivjoFVBZzxaQMlqYowuDOFlnZJqgrLOndgSyRWpnVERrSnBFWU5jbWlrQWN3WWNXbmtKcEpZQmFvYUdzV2RCTW15alhPTnF0UG1YSGtPdVVwc1ZtOXNZMkZ1Ync9PQ==')) then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(323, 319, -20))
       end
-      if _G.tpname == "Church" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ObcaWfzTlxWtmtQdsIUwCrHFzlkReUroJZgOayoIICAmOEGgsOFMtRVSmVzRU9YcXdBdnlBUXVMTlVoTG5qbWdPalF2aFZtYldjQndGSmR5VUx4ZnZLakJxeFFBS1JjRlEyaDFjbU5v')) then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-169, 327, 19))
       end
-      if _G.tpname == "Secret Obby" then
+      if _G.tpname == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CvBDaSipjrfIKJeClTERJauWUTRlsmgBphpAyGsbNugXPBmNNOlZUyyUWFJcEhRbUlBYW9NWUJuRnRTeFZLcFZRVmVpWmprS1JIcUN1VWJ6SkR3dW5CdUZUQkpmT29qbVUyVmpjbVYwSUU5aVluaz0=')) then
             game.Players.LocalPlayer.Character:MoveTo(Vector3.new(96, 316, 44293))
       end
 end
       
 function givetitle() 
-      if _G.titlename == "Warrior" then
+      if _G.titlename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('osxysMcuuVPCBooSSOrkrDUDTjtVFqlJrYVYmDwAQkquTajbxdiqcxxWXd6WlBId1FKVHNUQWhuS2xRYkxsdGdDaVdnaGdFc2dCQUp1Y1JVR1VDSlRib2h6Yndxb3hMR1YyRnljbWx2Y2c9PQ==')) then
             local targs1 = {
-                  [1] = "Warrior"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MjctCAzOtBOBMDZiKVdlbqyjTXjKQXybeUHMtPOyhzpLkvjVYRJJBWVbXFsZndLZmplTFZGRGZLQ2xuSWlraHdTb2ZySm5wYWtNTmtQSWFRd2d0cXRpa2JkS3JwZGhCd1YyRnljbWx2Y2c9PQ=='))
                 }
 
-            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs1))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('OEsjbrqPNEKakRzfvRNOtIZmjzaNJpZteJPuoAIuXBebNVwAtYXdZvTWVFITmhqa2pMeUpkWEhjQ29XVm5TQ1pYRFVzdVVZS09TemtsUlFFbm9VbUJ4ZVlES1BGcXBYWVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events.GiveTitle:FireServer(unpack(targs1))
       end
-      if _G.titlename == "Beginner" then
+      if _G.titlename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('hruUuDLgbgvfcvWYOrUQZwlAxTtZiOAGlmccPadnGOvsuQcjbaPGsXqeHlJdGttbEhtbkxPcXdNa2VuanV0d3FhZnZRd1dHZUVvZHVGaFV4bGtCWmhqbVJyWGFFb3JuY1FtVm5hVzV1WlhJPQ==')) then
             local targs2 = {
-                  [1] = "Beginner"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KZVkDjusgbxhKlHPsAOBkvAIFvSVhsBvmddqeqnzIlscnvguBOHhIiYWXdQbURObVFaTUNQdmRyQkhFdVluUkd2TXpPU21EY21CZk5uQUZlTExMQnhtQ2hmeGlVZ1liRFFtVm5hVzV1WlhJPQ=='))
                 }
 
-            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs2))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VxqRfSNFikyMJLBOphgHLeKqluCNlnaZseCvQZiVdTGnWxWezqadlIcRG1WYmplRVlzRVZQS3FlcUtsRW1ueG5FR1dCZWVyaGxWeGRoaHBsbnNoVkRseFlBaWJhYVdpUFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events.GiveTitle:FireServer(unpack(targs2))
       end
-      if _G.titlename == "Holy" then
+      if _G.titlename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FVxzvHwktJTMTdTzoruhDjucYZAkVPENfJKCEBtZudBVUsPdpRJkKOvelJJQXdBaXJjdXRHRGRBamJVV0ltTFhHUlBtQ2d6cFVjZlR4R3dmSktmVlJtb3FJakd5V0VlQ1NHOXNlUT09')) then
             local targs3 = {
-                  [1] = "Holy"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GUwnLzOOkOgcWGtEsTVDzdQfZniRePGrEDyeuriMzsReXIynGCURadhTHFvY0l4dlppeXlqZ0VjRWhMeFJ5U09aaUF1VGxqbEZyZVFPWlRTVXp0dVVYZXlkaERxaXBnUlNHOXNlUT09'))
                 }
 
-            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs3))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('gDfUSqQwyZNZmsXNMbPLJPzVCtMtmfhcCtkteCAdyXrstwMZkzYkOUvV0NiRllhY2Jrc2ZyaVh4eVh5ellCRmR2dlVxTGFVTnJjQU5QT2FnenBneEFuQVZ0T1B2WXpneFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events.GiveTitle:FireServer(unpack(targs3))
       end
-      if _G.titlename == "Hacker" then
+      if _G.titlename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MAeaCcPOtUyGzyscFHSktJhiygHcTymiDtDwaqKwmfNqNqJCasQieQEdlh1ZnpXT01YVWZPZmRaUGRaYWt4TmNlQXpLWWdmRGVxQ0JJSGZ1SXlFQ1pvTmNrbFlkYklldFNHRmphMlZ5')) then
             local targs4 = {
-                  [1] = "Hacker"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pKpchChunLquPXWClqXcWcTcRUGIuUyIlScaHETMlYOzXlgOGbyGqgvdE5yWUlBQ2FTUVRzYk5XRmJEd1d1Q3NtSVFMWlNhd1JuRElHcnJUT2ZMdFZ0ekZIUExUSmxNVVNHRmphMlZ5'))
                 }
 
-            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs4))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('oWSdeEsPpYHjQLWMAUuXtLayMsYjYUhcMTouHNwdcYTTOjMzHSIyAbyYlNZeXFjREJMQ0pwYnZ6ckRveHdYc3BtQXVjUVlLVENpZ3ZtamxLeVNNUmJuWGJocnpUWkhnWVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events.GiveTitle:FireServer(unpack(targs4))
       end
-      if _G.titlename == "Admin" then
+      if _G.titlename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DCQoRXchQWsKKGpfmqmBzEzrPuQXXvIUvBjnUSCplxpgIrhUHPryvPlVGhrWmVxVFJyVE1IUHZHWnFtVHRtTENaYUVSbklnT1ltbnl6d1dQa0pQb2Nqc3lqQld1WkpQd1FXUnRhVzQ9')) then
             local targs5 = {
-                  [1] = "Admin"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VeyIbvKMzCTHDumnMVOGZFHcGFcGZepGRwegKBBKdsVdvKsdDSxrtoOS1dvb2xZTGhXZWRCbUlGSXdNeFZHYUFNQ3BYdmpiYkJnZGRkRmRRWUxwQVFzT1poU0FlT1NPbVFXUnRhVzQ9'))
                 }
 
-            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs5))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lyvVLIPcfFpAKZBCLXIbAodtZPWcgkOYokkWYakUJmHeLZjahlhMUvYd0dTem5zdFBySnZpeVZhR3pucElNcU9uSnFoRlBjdW9BVlNVSVVNb211ZXl1elVocUZZVmtIeFVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events.GiveTitle:FireServer(unpack(targs5))
       end
-      if _G.titlename == "A-K" then
+      if _G.titlename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AlLGCRtKJEjkpbQKrBpEkmkkEcYrWpsEayDGkJjvdZefYZhEhwsIsKDTGxaV09pRmRkWVVHQlRCd2hBTXVybmVBeHdKbXhGTFRpZ2xLaGx2Y0FsV21YT0FFemhjUExieFFTMUw=')) then
             local targs6 = {
-                  [1] = "AK"
+                  [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('OkEZpEnOQknEmlrbCeGgiatkgAxnTzuRXsnNBjmSVwxVvHudPVcRtroa2NCSEJTaFV0dURmWklSdHRMT1RpbHJsY1VtYnlrbWN2bUJCck5FQXZJaWdXQnBWeFh3Q2FuWVFVcz0='))
                 }
 
-            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs6))
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MEgwLiSLJadhhJzMOPcIhUrHlDdcxpEdimUyIwGIkDcjliigPWcFhcNd1BkeVpvbUh4UnFYR1JlcnVxYVlWempTUGhSbk9iWmhJQXFndnRYanZXQlpYd3BSSVFMRUR2bVVtVndiR2xqWVhSbFpGTjBiM0poWjJVPQ=='))).Events.GiveTitle:FireServer(unpack(targs6))
       end
 end
 
 function badge()
-      if _G.badgename == "Asylum" then
-            local teleUI = game:GetService("Workspace").Extra.Stuff.teleportPart.UI:Clone()
+      if _G.badgename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('qUcSqZrxRDmTmNjcEJkuIYiGbZXMwApNYFrPWdpWPCIUafeNvWZOrFNa0xpaUZMUE12dU5UcnZLeUx6R25vWVB3Tm9SS1JPVk1VeGpGUGNQYklvZ1pObkltZGVaVlNSYlFYTjViSFZ0')) then
+            local teleUI = game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('kqjaQlJegwENZjMngGvwaXUBNLuBqtdTqcsmLlLhCsvwZJKwGrGgZagYVltdXZKU0N1Rk1hanNyQm9XS3VwWkNKQ2NjZ0RPR29od25iZ2Zwb09BalhvUUh1ek9rRUVDQ1YyOXlhM053WVdObA=='))).Extra.Stuff.teleportPart.UI:Clone()
             local plr = game.Players.LocalPlayer
             teleUI.Parent = plr.PlayerGui
       end
-      if _G.badgename == "Gunslinger" then
-            local hat = game:GetService("Workspace").GunslingerBadge.TouchInterest
+      if _G.badgename == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zoohaBFDVQchHJTkITcfKVAKfHhNXWvyqpePXcKVwkBCvQunMaAsrCPZGhUWnFqUVlPSnhEaVN6eUZaZ1BLdkpQY3d3cENGV0dqblZYeHp4SG1VUEd1ZmpRZ2RBV3p1ZFIzVnVjMnhwYm1kbGNnPT0=')) then
+            local hat = game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('vxDgrobZGJwfiqKoNfCsZeveAmAPkPpTZoMcnQGTzkGgtYuWCNWYbQWcmhJQ0xzRUxKdndheVNxd3R3ZkFLcGF6YXViZkdXZEh4RFhtU3NkUVpqc0l6b2lXS01ZeWVSRVYyOXlhM053WVdObA=='))).GunslingerBadge.TouchInterest
             local plr = game.Players.LocalPlayer
             firetouchinterest(plr, hat.Parent, 0)
             task.wait(0.1)
@@ -347,49 +365,49 @@ function badge()
 end
 
 function kill()
-      if _G.killmode == "all" then
+      if _G.killmode == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AWUGLMpssFuXhnmoyqylRvfMrTIfaAKTNaaCcGkvYbhiaXFejBMFKRTd1pKV2xkY2tqYnluQndUSlNsZnRScVBTS2hEcWpqU1VkdWxXSWJ2T3ZNV2RIUEVVRHRWZ2piallXeHM=')) then
             for i, v in pairs(game.Players:GetPlayers()) do
                   if v.Name ~= game.Players.LocalPlayer.Name then
                         local kargs = {
-                              [1] = "slash",
+                              [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TfpLJaheQLopTvWxvWEWUhFDDRewfuUwPrAvbRlrzcyMokcIEbAiyakVkZVQ2ZyWm9pbFlLVEFtVXFtVkh0bG52Z0lwQ0NMY2ZLR2F2emdvTEFJVXhrWHdGRUtRaWlWRmMyeGhjMmc9')),
                               [2] = v.Character,
                               [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
                             }
-                        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
-                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FBwxSqFwbaEDPWIjuLktlKnCIesNxwAiprKsplUvMSJpkrQUzpRzNiLV0pFWU1KamxJR0tIZ2dvdFlDanNWZGpBcERJTXZSdnNSUFNuR1BuaEJzQ2Fva1pqa1dtQlRhZlVHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Backpack:GetDescendants()) do
+                              if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fJdMbOmUwSFiPHUqRXwzGthKsYCFeykaUshpRRjdTcrJOBXJOPepITWbEtPaW1KTUxyemNVUkNMQUVvV0x5VFBBdENxclduU0FWd3BQZEd2TnFhWWpjSlBvVnRwTmlpZVZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XWLhzZCOkbLzEtIUjAhtSmmBxcAZlpkmcEhaFbNsYmVRmAwKeUEgqgfUGZrd21Eb25xU0t6T1JnTGJnTXVDTnNlYW5EdUJsZWlNaW5BV2tvZGprTlJHbGRlQlRPdFVTUlJYWmxiblE9'))) then
                                     v.Event:FireServer(unpack(kargs))
                               end
                         end
-                        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AKPPendZVucnSyMvolCFUWgalufABfIJXJaotOwZzgisQsHIMfXktxGV3BuVU5XdmRORVJncEtFc2doanZNUURDR3hqa0RSSmNlVXdrckd2WGNnRFFHVFJCdWhBb3NrTFVHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Character:GetDescendants()) do
+                              if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('uuWvKjDcDXYRfdXcIAzKboaTLqDjmDXJBYCIWwsZSxnEjxCuGGuGXVAZ1lPa1VDa1FYUkx3bXpoRk55Z0JjdWFid1NKWWlaUFFkcUxUTVRFcEVaWUVTTnVPVWJjcHZsZ1ZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('bIwaBDjUMTbZjElyXilibTfdkpHMaWmCGgTLbURfqKregXWsezSEDpTS3pNaVpZaklBdndKR2hzbVBKZm5XTGZrVmpzQnhHV0RDTU1nRVFxRWVLUm9TVXJTWm1PTkFrYlJYWmxiblE9'))) then
                                     v.Event:FireServer(unpack(kargs))
                               end
                         end
                   end
             end
       end
-      if _G.killmode == "single" then
-            if game:GetService("Players"):FindFirstChild(_G.plrname) then
+      if _G.killmode == nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wPwXlLxKwOEzueAxHtylCJgfiWudbNFVxkmmGPPfZANMuVEuDfxThUHWXRHR0FOS1NhQWhWdFdVT3BOZGRZZ0Z0UUxuWmp5YkRMYkVCZ3ZIYnd6UlZYa2VYZU5hck9jZmMybHVaMnhs')) then
+            if game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('NLvtRVMUJkMglNUzFsdHRApVeZcQrIvGvLcMgCCvDjGYeUUtyHKIgaFdExBWmRTY2ZaZnpwVllqWnphY3J6RFdJZmNPU2NHTHJsc0FqYmpxZUFWZ1dWVHFXcExEcEJlRVVHeGhlV1Z5Y3c9PQ=='))):FindFirstChild(_G.plrname) then
                   local kargs2 = {
-                        [1] = "slash",
-                        [2] = game:GetService("Players"):FindFirstChild(_G.plrname).Character,
+                        [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ffjhJHRlmfsSAxODcbmkiMgLnFTcmNdiVfSyePDfuajoOfCkITXnlzcYVhIRVZnS1JOeHNJVVJFVUZrbFpEd0pLV2t6R2FscnlqclVsWFdnRHVPaGVBSmRnY2plQnBwT2MyeGhjMmc9')),
+                        [2] = game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KIrMiVgIKiuiRlyjKzXSpUpjJhkzsjSEwYktJqAFCFEILYLgKuhmZCSckp2S29qWlZaSU9KV0J5dGRLVnNEY0pEQ0dqa2RZYlR4WVJySHJFTVFvZGVYZ2RsaGlDZFBjZ1VHeGhlV1Z5Y3c9PQ=='))):FindFirstChild(_G.plrname).Character,
                         [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
                       }
-                  for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
-                        if v:IsA("Tool") and v:FindFirstChild("Event") then
+                  for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QRbHbvDexQGlgVYpASsNRdmVLiGrKZlrxkTmlSqixZAXRinGVTmTenWc2ZTWXZQcFhtQnNSaHh1VmNIZEVLc2ZaVG1sTXRJTEFDRGZ1SW9KeUR3bWpySlljT1JiUHlQZVVHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Backpack:GetDescendants()) do
+                        if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pnASWCTqcRaDtXnOweIvpRxcwyeEavvSqjnueSxrHKCUtbwfDvrnPllVURBbEtodmpTZGRFeml5UHVSbVR6Zkl2bE5Obkl5VXB3enlJbXhFbXhucWJmT1ZEUWNWTWRwSFZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('hzvnsLCyeArDAjfCMfsUciXRIVsVyXODnADvgVZCvFLWZgtNDabiEaESG5GR2VXamxaa2hmSE5TaFdHTHNEWmxadEpqa2dSeUh2UXNhR0RkbWtUZWJLeG9XTGdpWGF2S1JYWmxiblE9'))) then
                              v.Event:FireServer(unpack(kargs2))
                         end
                   end
-                  for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-                       if v:IsA("Tool") and v:FindFirstChild("Event") then
+                  for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pgzPhmOBVznwzCVaGSTAfRkdKEWLBOEogEKbMaSSdGbKJOnjxOjChEeSlV1eHloeFpEQVhmRWlvRmZVbXFqaW9SR3lLWWVPRHBlcExiZlRGcUJ0YUhSUVl2dkJGYVNxc1VHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Character:GetDescendants()) do
+                       if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FbvOOuZKAnUnsQdZgACaHDRdpoTKBqKFGYQLCUYsIrDQSYZtRtyMVckY0RGTk1tY09ZTE1ZdklSVVVDdW12ZWZoREF2WnRmbVNWRGdOU2x2YklpbmVGa1FVcWFJUmdzeFZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('sgbnGXrgGhGRbvQmaVLIgCyTRPqHFhDFaShaVTkneFALdVagNkCiZAecElQTVFIZmlVTGdmQlB3ZHRCa3V3bXhFRnVTY094YVhSUG1hS01ndlFWYlBFT0pYYWpDV3FoYlJYWmxiblE9'))) then
                               v.Event:FireServer(unpack(kargs2))
                        end
                   end
             else
                   OrionLib:MakeNotification({
-	                   Name = "Error",
-                   	Content = "Player Not Found!",
-	                   Image = "rbxassetid://4483345998",
+	                   Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('YdMOeOaTGmqfqIiCJKqNQGTJvnmqiKjOeWerqFiXfYumMMXJNfsaOqhaWNzTGdPeU55R1ptY0lUbXhSU1d5TWF4bXJBTmNsemlEUHBTbUFKWUV4Q2NjeWJzVExveUlXTVJYSnliM0k9')),
+                   	Content = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('SWclULUwdoZTHsofzJjxTCqlhEMjHmzTUDygPqXNSxaKqSAAUlMxmDcYk9xaGx2WVVZaHFCdUFHVHh6d0ZCUFhUSnBrWkdNSU16UXh2WWFqQUxHV2FsZXNwcFRnRWVuT1VHeGhlV1Z5SUU1dmRDQkdiM1Z1WkNFPQ==')),
+	                   Image = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('uObxsVbVjVFoGVAznpKjymhIMCUtEyvGOAbPovTuhjnwtVcEYOKiqHXeHZVdEl2Zk10dmFyUG11R2hWeVZZdXBLdlZPRGRLTXdrbWN5ZkRMcmNwZ1FOSWxkbkhwZGFDa2NtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
                    	Time = 2
                   })
             end
@@ -401,17 +419,17 @@ function slap()
             for i, v in pairs(game.Players:GetPlayers()) do
                   if v.Name ~= game.Players.LocalPlayer.Name then
                         local sargs = {
-                              [1] = "slash",
+                              [1] = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('mCcNKKidXFzdWfHKjwOgapCjvNmXTygalbhTgtRAKtuLiFxlKffyuwXQ2dMVXJtZVNuUWxYcW9QU1J0RFJzVGJLdFlPZE9mbGdlZERFcXJCQmFXVVJ0V1dqQWtHRUtsT2MyeGhjMmc9')),
                               [2] = v.Character,
                               [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
                             }
-                        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
-                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('akkwigkVYaiDgasVXVSgxLwiLeRQIjcWdZHFQvlNFARGOmCnqbSjwrAQklBVVl0U3FSYk5kSENtanhubFRNbVdPdFBMQ093Q2xVdmxUTGZEWFhCeXN1V2R5RnBZUEREQlVHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Backpack:GetDescendants()) do
+                              if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lwKStAezqFhYSObGSDfIzsveLwzbJoLBzoOkNFlkcUUTJYZcVnCHowhY3d2cXJVQ3BVV0JlV3FaY0tZRWdoeHZUbkZmb2pST2NrSkZwQktleVNNd0JobHpUaU1uSFliYVZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('PZrWwzGayqVmOUcaGbiHLnjhozkqRAjJXwrzrKnoCMkVxUlTPOfkUSWZk9GeG9GcllEbEdDVHFjS3dSenNsTnBHYkVjdkJXWE5xV1R2ZlZLbVdHakFCdG9nUEdNTWhqaFJYWmxiblE9'))) then
                                     v.Event:FireServer(unpack(sargs))
                               end
                         end
-                        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        for i, v in pairs(game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KjmepzIUWMFayqdosDBYWssJoPGAXuJTWPogxQlDIEexBpSCfAOHVEnSXhIV05FVkdDbEp2TUpIeU5rakRIU3NJcHFrdlphSGZtSWdJaE1OYnlYT2pCSHVSa1JUWHpJd1VHeGhlV1Z5Y3c9PQ=='))).LocalPlayer.Character:GetDescendants()) do
+                              if v:IsA(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('niHDUrGOaRlSTIKtYvFcmDlNpZDRyPkypMaynbAinMkHFFYULgjWrGpZXJHTmF1cWlxWmNuc1pkd29KbG9mUmFERnVUTVBBTHJIRURLQkl0cm51TmRjTXRVelZzTkVielZHOXZiQT09'))) and v:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XxPViXdSHCZReYNbWhenDgGxAVHfkJdYbwiOqmVRJyqLCfwFQGChSOAYWdCdWVxVlFZeVFVdWdlYWROdEFpa3BDdGdzdnJHbnVyRmpWQWZvYnhtVUdhSVR2S3NMV2RNYlJYWmxiblE9'))) then
                                     v.Event:FireServer(unpack(sargs))
                               end
                         end
@@ -423,15 +441,15 @@ end
 
 function admindetect()
       while _G.antikick == true do
-            if game.Players:FindFirstChild("DevOfficiallyReality") or game.Players:FindFirstChild("itz_galaxymidnight10") or game.Players:FindFirstChild("MONsocool666") or game.Players:FindFirstChild("almondandraisinaaaaa") or game.Players:FindFirstChild("sapotals2") or game.Players:FindFirstChild("25boi1") or game.Players:FindFirstChild("Emanman2014")  then
+            if game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('OwJizyjHbDsJnJqpBqRzpadJCTGMwSGfFnareRokjqmJssnkTWIcYUhZnF3ZGtrTWNEeWdOcmNyeVhTV0pKS3BuWnpFVGNqT0tvQ2xUbW9Yb3BBSUhwQUhna1diVWVZQVJHVjJUMlptYVdOcFlXeHNlVkpsWVd4cGRIaz0='))) or game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('tbDPvFTPyiYiDvNTlYsXIXFwQpupDABsyRhZLxjkZoDaNDwaOeBXUnGcnVlZVhhaVdGZGlyZFhwU1RsdnNuUlBxV1B3d2NwZXFoSFhVelh6VlNZaExsbnBlektzV25lUmFYUjZYMmRoYkdGNGVXMXBaRzVwWjJoME1UQT0='))) or game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QZAOEGHlRoqPOzfnZrYxCtQngYIbYezRtXiediEFyhgOcKIUcudUUcLelpBQ3dBZ0x0c0J0cHhHbkxxVEVkeHVkRXljaGlKUUFOWXBLWFRNakdhZnJnTEpMZ2lRQ2NST1RVOU9jMjlqYjI5c05qWTI='))) or game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ceYHGXgkMuFadBSXmRNpdgvgGAHFWeNjWplJLBhMXDiOleEscsNamjDREV2Y0FCT1pYTWhjeHlWalZzTFVWcGVtS2FVWElRTVJkTXFuS3lRa2NzR1hVUnlCQ3FQSEpxdFlXeHRiMjVrWVc1a2NtRnBjMmx1WVdGaFlXRT0='))) or game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KmpyOQFwzchaYzkXggdiKZqFkhYpZDXRhCYWFEJCeJPDgadvZlfxVxecEZ4RkdTc3RKcXlBbnNnQlB4YVVuRlh2am9ZdmxXc2pnZ1N1eVRReU1MbFVyaE1lcGluUG52a2MyRndiM1JoYkhNeQ=='))) or game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('dQUHZGAgXuWfCknKPOBDAmgIHIIhPoYEDCUFXzNdrIQtovAObRjaTlIQnd6eVNNZENpbEVET1lIRVNjR3JoakFTVWtEY1lmYVRUcXNJcWVOSnF2VmRiUWJuaGlFSG1TdU1qVmliMmt4'))) or game.Players:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('bRepuwrgffvYTfIPGrSWMyOWplyWfjvuwoSEAYBRuboqnOmglIEoFFlSGJPSkNMWUhxYndhbFBhc0VEcml2ZnluS21Jd25mQnVtUHBHZFF2d2xCcVlZdnFCcVFldGZDclJXMWhibTFoYmpJd01UUT0=')))  then
                   OrionLib:MakeNotification({
-	                          Name = "Admin Detection",
-	                          Content = "Admin Joined! Kicking player...",
-	                          Image = "rbxassetid://4483345998",
+	                          Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MehdFRcWAwpmutTzHzBbHEveFFEoItrmbhALyZQPBvhhpeaXxnaAStbZHBKYlZTU3Z2ek9hdlRycWdlWnVxT1hPR29wT2tPbHFCWXJhdHNQRGJJWVlzWnJiUnBZVHJIaVFXUnRhVzRnUkdWMFpXTjBhVzl1')),
+	                          Content = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lMKalyDpUWoIzzvIjBdzaHeMCfAoHnCmgCcsekhZfntiuCobnsLGQIacFlZcmZicWdLUG1panhWWndvVGptSVRSZWJvTmpEUVhTQnF3aXZOVUF0clB1c0JDdUdobHZkelFXUnRhVzRnU205cGJtVmtJU0JMYVdOcmFXNW5JSEJzWVhsbGNpNHVMZz09')),
+	                          Image = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('oVIBYmYLtafMTDgETiMzsprKNNWVZCbIhrzIiBneBeFgKKqvQFTbxJbeG1nY3haQkphVVZEY2liUHZIRW9ad2VLRnJac0pYcWZ5eU5ZS0VqanVvdXBYVXdFdHRLaGF6UmNtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
                           	Time = 2
                        })
                    task.wait(0.5)
-                   game.Players.LocalPlayer:Kick("Admin Joined. Kicked to avoid admin")
+                   game.Players.LocalPlayer:Kick(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('bKOAmMCVUOaKKbvIpUlAsZtuDmIHEyLtsLocZlhSGPybTuIMpbpQvPuSVJqbVJiTWpvanFyTHVzeXB3ZEJ2S1FueGNiQlVuVVdXQkRmbnBYWWFDaExnR2dPa0RxcU50UFFXUnRhVzRnU205cGJtVmtMaUJMYVdOclpXUWdkRzhnWVhadmFXUWdZV1J0YVc0PQ==')))
             end
             task.wait(0.1)
        end
@@ -440,11 +458,11 @@ end
 function nolimit()
       while _G.nolimit == true do
             task.wait(0.000001)
-            if game:GetService("StarterPlayer").StarterCharacterScripts:FindFirstChild("InventoryLimiter") then
-                  game:GetService("StarterPlayer").StarterCharacterScripts:FindFirstChild("InventoryLimiter"):Destroy()
+            if game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GkdhVidQkiUjvYYrOPApHCHBbDEpseNiUYCHOakzhkLvVOPFXgzQvKlUFRxSVVSemNySENGeE50enFBbGt3ckRvdU96cGRrb2NqQmZmSGhIWEJWcFBYU3JMZVNGR05UQ1UzUmhjblJsY2xCc1lYbGxjZz09'))).StarterCharacterScripts:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eqrGLtaLLSFnPotosguCaGiJdhdAJTuvDcYRBtJhEuApysZMPMlgTlPbER6bVRqdUJ2elB6cFNMempCTWV4TFlZT0lrdEFTUmJWQm5LRUx6ZW1VTmNtUlBYdVJpcXZOZlNXNTJaVzUwYjNKNVRHbHRhWFJsY2c9PQ=='))) then
+                  game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TUsQfaFSYcivxRuBpKxsbYECJddtXvgVYcodgymyVQXsgEVINMVxNBcUmRiTW1rZXdaa3hjcHlJeGVmUUhrekNCSWJndmp6T3FtZm1pUWd3WHdTUmRteUZJaXVrektjSFUzUmhjblJsY2xCc1lYbGxjZz09'))).StarterCharacterScripts:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('pINajpBtjwAZbgrqzveTLjdcZYoEzdNYzywMNxpfaakhxVNdsQDQCkrbXpxWFRneGN1bEpMb25iRHBXellxRnlxbU5Ud2ZTa0paZ0h0SXJ2U2hRZ1hnS0VmcUdKYkF6c1NXNTJaVzUwYjNKNVRHbHRhWFJsY2c9PQ=='))):Destroy()
             end
-            if game.Players.LocalPlayer.Character:FindFirstChild("InventoryLimiter") then
-                  game.Players.LocalPlayer.Character:FindFirstChild("InventoryLimiter"):Destroy()
+            if game.Players.LocalPlayer.Character:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XHKIcykgrkArgDyBAaRhhdxhtATUyJTpzbsBGMXJgtPswFgSvhVlCHLRUJCb2NCeHdGVEdmRnZFbVdGdXhmYk5KWW1qVGJUT3NNZldoU0hxTklmSkp3VlltcEhmamZ3TVNXNTJaVzUwYjNKNVRHbHRhWFJsY2c9PQ=='))) then
+                  game.Players.LocalPlayer.Character:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('gBRriFcqfnfJrgThnjIIRAqdkqnydwGLkWVuUOsbnOSIdDKtDztLEVGc01mVmxpQ2NqUFVFRHJSbmRXYkp0U3dRbmZNem9OZ2VxaGdVcGppeG51WFlqY2JLQll2TXdqZVNXNTJaVzUwYjNKNVRHbHRhWFJsY2c9PQ=='))):Destroy()
             end
       end
 end
@@ -452,42 +470,42 @@ end
 function nospeed()
       while _G.nospeed == true do
             task.wait(0.000001)
-            if game:GetService("StarterPlayer").StarterPlayerScripts:FindFirstChild("SpeedCamera") then
-                  game:GetService("StarterPlayer").StarterPlayerScripts:FindFirstChild("SpeedCamera"):Destroy()
+            if game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('rPHzImakdfTMGkPZaRuIxBdLooMIFOWklWHoamUppEDkiQYcOQhIKUNT3RyS29nZWhjZ1pZSVB4S1ZGWllpYU9qUFJscmJFdWZDV3NTQmJTQnhuZW1NdldrTWpQcGRCWlUzUmhjblJsY2xCc1lYbGxjZz09'))).StarterPlayerScripts:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fwxYzAtxhRenQmBaDKGjRwSREfNXuVbPiLQhUfTJTVRKFVjJGzDLsAAQURlYmRiWWZ1Skpyc3FaWXBxaVNLTkdnaFNYSnBLckVpTWJTSVhZRnNZZHlXbHlxTFluYkZuRVUzQmxaV1JEWVcxbGNtRT0='))) then
+                  game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jLuNWMtnBFkIDvZdxQCLXohXuAuanPgHTMPRuLNscMAqtleVaqCQhhOVElwdnBLcFV4SnZ4RmR4V2FrR2RMTGpycVNydGRZakxqc0dpQlpRRXlaYnVDcmxLQ1RIYkpuT1UzUmhjblJsY2xCc1lYbGxjZz09'))).StarterPlayerScripts:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('tnFSQPoGhZPYMiuslFJZkWzsQwhtuscOHeDBHyNOjhKRxMTdrwGZwTacU9BekpiWFNKUG9WTmhxcXFoaFRzTHVWaldkYVJwR0FnaU9xTWNQeFdNVnpIcmdNYU95Ym94ZFUzQmxaV1JEWVcxbGNtRT0='))):Destroy()
             end
-            if game.Players.LocalPlayer.PlayerScripts:FindFirstChild("SpeedCamera") then
-                  game.Players.LocalPlayer.PlayerScripts:FindFirstChild("SpeedCamera"):Destroy()
+            if game.Players.LocalPlayer.PlayerScripts:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('iTLrdBpVYTmivFTSrYlVkdqtpPeUQeoBQRMpRVfMiCLRqxNYrKUJViuWmRVenVSa3BPcHFMUUJqa2N6aFhMZFF2ZWZMT1lqRHRZbUFEaUFWWktRcmxZeklUcEVnWldqd1UzQmxaV1JEWVcxbGNtRT0='))) then
+                  game.Players.LocalPlayer.PlayerScripts:FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XTgIPyiZWMcINdoYrvdyvUqOEAlSqeRAdBHAuYeSZYXBnldLPennMauTU1tZ2tJRnRqSW9QUnZXTHNqZGFvYmpOd3pMSUdmbXdKUERlTmVZdlBYd0hsVWVPakp2UnBWZlUzQmxaV1JEWVcxbGNtRT0='))):Destroy()
             end
       end
 end
 
 function novoid()
     if _G.antivoid == true then
-        local part = Instance.new("Part", game.Workspace)
-        part.Name = "AntiVoid"
+        local part = Instance.new(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('qQEOhSnQmkdLjGKUWBwuyyVNOctctZdHxrLFggAhkoLksIXsDvumLbIWUd3bnNSR3ZLcmNnaWd6a1VjYXJOQnRkWXZSaE1pZ0ZDeFlEdE1vQ0hjaVFwenpKRFhvdE9IS1VHRnlkQT09')), game.Workspace)
+        part.Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('qbQRfUuFekfpBHQOLJdQrKxzQMXbpQmfGNTJSjMagdBCYSmDRYmWjVZaFZFSE5VQkV3RUxIRmxOcmFHYXFZZnpFVm1kS2tPdkpkV2dxYUtLU3JpY3JOa3pibkJlbE5LdFFXNTBhVlp2YVdRPQ=='))
         part.Anchored = true
         part.Position = Vector3.new(103, 270, -147)
         part.Size = Vector3.new(2048, 10, 2048)
         part.Color = Color3.fromRGB(0, 0, 0)
-        part.Material = "Glass"
+        part.Material = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('YFMqJAzkWcbDLkjjrBNaLjXnQJaiVELlDyDpJPsItClGiLGJDSurFuNT2JlTmVTamJwaVJkVUh2c3R1Rk9NdXJNZWxFUVJYT2NBdkJDRnNrWkVocHFZaW5jT0FRb3F1cVIyeGhjM009'))
         part.Transparency = 0.7
         part.Touched:Connect(function(hit)
             local plr = game.Players.LocalPlayer
             plr.Character:MoveTo(Vector3.new(103, 294, -147))
         end)
         OrionLib:MakeNotification({
-	        Name = "Added Anti Void",
-        	Content = "Successfully added anti void!",
-        	Image = "rbxassetid://4483345998",
+	        Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ktDhWRNncNmDOPgoOubtnDdFrAWxvyRsUlIaiEpqQkBJtBAThdkmHRiQk1idU5KblR1aXNlTmpjSXNKdE5vdFh2bUJOeGF6U1JDTVNnekhJR0xzaEZlSXh2c0ZsdnJ3TlFXUmtaV1FnUVc1MGFTQldiMmxr')),
+        	Content = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('NeFGswHAKFxAQNsJtxWcScjaBFHDTOZcGOJaJubGzJXCGxYqmPMdnavTGp0ckpxVUVMUWhUeWhqcGxpdEtueHFjdnhkQU9WQmlwVUd4VE5KVWxLd2l2WlJyY1dmR01YZ1UzVmpZMlZ6YzJaMWJHeDVJR0ZrWkdWa0lHRnVkR2tnZG05cFpDRT0=')),
+        	Image = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('rrbVLyHgrActrtMTHWHqrMzKAibgRilRGYVZssjrPRgaVfvzLGMXFfbTG9ZbFhwdE9hUG5HZlR3ZUZPS29lck1uVnlYa2JGdnp0enVlYml2c3J2VERWYVVVT1h4YklFU2NtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
         	Time = 5
         })
     elseif _G.antivoid == false then
-        if game:GetService("Workspace"):FindFirstChild("AntiVoid") then
-            game:GetService("Workspace"):FindFirstChild("AntiVoid"):Destroy()
+        if game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ePSdIvCMGlbSpRltxRShYrdTkDHqCErelAaycBqMxkAucmfeZTaAgWhZWhFSWxsYVNJZGdGUHhuVEhoYUhaTW5FTmt5RlpEUmdZTHdWT1JvZ2FEQ3FTdWpUTm9CQmhFSVYyOXlhM053WVdObA=='))):FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RVsjjqYOjbmCAWpPngMcNQUUkgjuKaIdrOTILHapPZqCbEyLEMWeWjUSVFRUlVQQ2psQWV1UGNtaUFIcENkV3hSZGlQTmlocnpXUGZXVE1NTFpuTUNOdXVobHVDTU9ZV1FXNTBhVlp2YVdRPQ=='))) then
+            game:GetService(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zDxHUQmedXzmtlexRomAUZPMzwsUSnyIGHACOxbIvFAfAHKHlNrrIhXeVB6TmhEQlJnVUpmdXpCWWV5aUhRaGVaY3hvTlBQRW5SV3VSamp0WGF0UVhQYnFQa1ZDd3RwVVYyOXlhM053WVdObA=='))):FindFirstChild(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VmieGMsTsbUvpaYroMMCsLxGxekLorWSxqnIfQYiDiAZZATGRaINBfEWGdoQ1lkZmhZY21YRU15ZHJKZ2ViYUdqbkRGTVdxZHZsTmpOeE5zYmNEdkphRkZBWm1PbEVFeVFXNTBhVlp2YVdRPQ=='))):Destroy()
             OrionLib:MakeNotification({
-	            Name = "Deleted Anti Void",
-            	Content = "Successfully deleted anti void due to toggle being false!",
-            	Image = "rbxassetid://4483345998",
+	            Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('tPdmVJLRBiAfZCAMeCLmzdwzRytTRMGKFnZwSDYGbQgodQTAUQMBOGlSGFaaGVHc3FteFVHVXNHeW9na05sQ1BLQ0hjQ3pUckxsZ0xYaXZHRWJZbkJveU9kY0x0elJpTFJHVnNaWFJsWkNCQmJuUnBJRlp2YVdRPQ==')),
+            	Content = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('gEUEZQPUAfEPxnmBHgkDRvycuIgiOHSzOsTfXVMtxVrsQWWQfAPcosicU9LTnBIZlpvWFZOVVlnWnVnVllkZlZQZVlxU0xTWlF5RllTSmJqc0laVGpGSERTQXZvbmlxUVUzVmpZMlZ6YzJaMWJHeDVJR1JsYkdWMFpXUWdZVzUwYVNCMmIybGtJR1IxWlNCMGJ5QjBiMmRuYkdVZ1ltVnBibWNnWm1Gc2MyVWg=')),
+            	Image = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('UzrAuAZaQVvYBcVEOnkWpCARYihgmJCvfIuOKodbTPIDtjdwZiCOoOWT1BnU2hvR3lFSktkYnBsTlVqSHlYeUFNU21XVHh4YndjZllna0NpVWZtdVV2YmRMeFRvQ1R1aWNtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
             	Time = 5
             })
         end
@@ -496,65 +514,65 @@ end
 
 -- Tabs
 local homeTab = Window:MakeTab({
-	Name = "Home",
-	Icon = "rbxassetid://17605789373",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('qNfgnyNvCrjUlKZxGAXllOVWfBnnIZiKXJxgddnYtgVlyHxMqOMNBywZWRZTFdnWlJQWkRLQXZ0VEJSZFJkVUtNUmdzZWtCT3NBTEhMeVVsaFZqWWh5cFVXaXV3TU9NdFNHOXRaUT09')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('dSjgmEPobGRPcxbInQKgSlcatdlehvzCJdNOysVfhjgGUYZYnxWCJaZU25RSENpYnJ4QlNVdEJCd2lpdWJGZ1VZek1kekJlc1dycW5SRk5KcVFjSVZXWHVkZUNVR3BSd2NtSjRZWE56WlhScFpEb3ZMekUzTmpBMU56ZzVNemN6')),
 	PremiumOnly = false
 })
 
 local farmTab = Window:MakeTab({
-	Name = "Farm",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FQGQxhCcNmIMEpLhKfijWAXxCXReXIghljLSuCzGhkBOkhOIKqrUiOScUdOS2JCYm1QRGxqcFRpVm5sdk1nTkRmY0piVnRlTlNoSEhBeUdhdEtNQ2VCWHhValp1Uk9vVFJtRnliUT09')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('kuGuxEXGlrvDBiAxDyeLAPkALpinvfvvYLKPvwYULGezgRnjQHsRamLWkN6amJPZ1Vndk5udVlLbFViTnRuS21QTnJVVlNGbFhlV0p4YmRYUHFuZ0xsQVhCYU9TeHNNdWNtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 
 local teleportTab = Window:MakeTab({
-	Name = "Teleports",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('oIyrAKVeZfsXOHYyXSpQJnQhiIBkLBOelKeaLwJvACdgBfCfMulySqXU2JGQUtGZWd6ZFZSREdtQmxtVkhUQ2VnUVpNQW5yRE9KaXBNdnpwR3FrYVliQUhWZXRpZnZwZ1ZHVnNaWEJ2Y25Seg==')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AUxPcwwWrQyjROyEIIAwKTccOoxSTQcKBjMUMuedJNDhmhooiqbAQVgeEZNdmJabVdMRENnUkRSVVNsVmtwcUdXZVZkSVJlVWR5Znd3ckJPQkpTT2lzcmNBVVNxbFdmZmNtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 
 local titlesTab = Window:MakeTab({
-	Name = "Titles",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('LURFhzZYVhusnqfVpFvmJmZmtfsLuwvCCTkyqbYQneYEQMFbxUiWMJJRHFHUUtEQ0F2SGZGZW9tRXJjYmtVeE9WU3V4aVBKU3BjeVpsbXZoSUpleEJoSnlWWkRTcnJlb1ZHbDBiR1Z6')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('SMAoYPRIcSJKFyqLgdjmHZtLukwbdNZGPUDLpmGjlehnrIFeDUznEfnZWRaUVZIak5hbmRXSGFBemxIZW50Q2hha2psa2J1S0llRmRUSXpXbUx3SWxsWHVwZkdWTUdaQ2NtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 
 local badgesTab = Window:MakeTab({
-	Name = "Badges",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wQaueqvOTyoTjjDOkDwPafxwIltbQbVClxbEfJwemaUVOoWqxdBNAaFTnhPTHVZRnpmaUtnVHRMZkpRY0lLdmxBcmptaWNXdUF3elZBQk5BSXh3cHBlV01SUWl4V0NJYVFtRmtaMlZ6')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VTBJLUJscrzILPEZOTDuEzJtyLrZXLQtffUOopPNqUlVZUxrkShfRcdZGlVVmVqd0JaZmVwQU1xc013QmdpZUhNQ3ZRUmh5R3ZYeXNzeUliRFJndE9HQ3pob09IWHppdWNtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 
 local glovesTab = Window:MakeTab({
-	Name = "Gloves",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FdptrvEaBBjQTuDhUwnmvzJkzYDBVAfvTzcDIvtRVwCHXWXSkObXnskcXRpekJXQnBZZ1ZReHB4SVJEQVN4WEhDbnZac2hFS0tDVVdhaUhEVUVEc3lqRWZQWnBRbWdxS1IyeHZkbVZ6')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zhkibkiXXhHxyyJMRsMlQeQUKEBzeZIDSnhYXAHlBbAzyQRrVDDRicRV0xOWklFVXJrdUNlTmNwSlhMRmNwRlljQlB4c0ZBSU5NaHFtUE5pSUpiYnFIa0pVTFpjbWZ0cGNtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 
 local funTab = Window:MakeTab({
-	Name = "Fun",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KfBLqnavSouugdTsoDUxEaEOKLoEPiuDDXgSRVdXbEePsxZhiLFlswjRXN2VlBHUkV0d1RsamRpREtIRlZHUnB0ZEl1cmFRZHp4RWJHZGp6VllRdGFDWXhVSFlFaU5zdlJuVnU=')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ryHnEDRBQFaUIpSiUMeoOzvcGjomTCukmuCqEbfGLyCIzTWFvDcJjRaTUZOaE1YSnh0QklOcWtJUFdWZmpsR0RKWWlKWVlER1B6Vnl4R3dhYVBQbXB5cWpNV2FTaktCU2NtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 local miscTab = Window:MakeTab({
-	Name = "Misc",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RvmHQnjrkXAqDIGitUXmvtrKaoDcnMVBsJfzhyugmXvffgUlByqIjdzY0ZxeWhBVHhVVHVPeVhJQ0pzb2VqZGtteUlTUmVteVBDdWRYZHRlQk9tWHR4RVRtSktnVmxRaVRXbHpZdz09')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AGvmGvgDJBCRLJUMIZplVXZJcqgfMEvPdDDwzmNaIbFCDqGpYWrhwJOdlRBSlhsdXhWRmJNZUVUcGNEZ0RqV0FvS1FWY21GVGxsYmlDQ1JuekV4cUNzYXhsSXB0Q0Zvc2NtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 local plrTab = Window:MakeTab({
-	Name = "Player",
-	Icon = "rbxassetid://4483345998",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FyogwrbCNygApfOveYcAToBaLnLUqIGQgspMhVgUkZlkMpVXVMmwbcwUWRucW1NUmRxZ290TnV1QVh1TXJFbE1FSnpGWFRhUXhFbWF0V3BRY1puRmJaUWZWbGJ1QVJudVVHeGhlV1Z5')),
+	Icon = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VWNSWEsDEXpkrpFLiVFOfdIXyLJbaGRuRAnUYpyPSrGyzsFfMhBSKxaQ3NLbFViWlZ2WHNSSkFaQlNsakxmbkVwWGJ2RWdXeGNJVHB1cWFqVGNHSEFVck9FRlBYbnhER2NtSjRZWE56WlhScFpEb3ZMelEwT0RNek5EVTVPVGc9')),
 	PremiumOnly = false
 })
 
 -- Labels
-glovesTab:AddLabel("Note: You must OWN the gloves first then you can duplicate it.")
-titlesTab:AddLabel("Note: You must own the title first then you can use them at multiple times and create different colors.")
-titlesTab:AddLabel("Some users or players are able to use the A-K title without owning it.")
+glovesTab:AddLabel(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('hjmqOwssQPyyKHuMhLaAJvYWxvzsmXEhUicQciwcOXtARqVTLAQDKlDZVdsQVFpQ3pQRmVxUmNzb0F3RWRjQW1JdWttamRkZGZiYUpkTVFRT2NxeW13c2ZXR3NIZVVpWVRtOTBaVG9nV1c5MUlHMTFjM1FnVDFkT0lIUm9aU0JuYkc5MlpYTWdabWx5YzNRZ2RHaGxiaUI1YjNVZ1kyRnVJR1IxY0d4cFkyRjBaU0JwZEM0PQ==')))
+titlesTab:AddLabel(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GKwNImjFKjbOsVGCLQjgDlLrErKUpFTpawoeYOrepgjEOzGAJemOOFgZ09KeXdhd2hwa0pDRWdLTkNzcVFvV3pEanNzY3NUeUl4RUVxTUxFVGxFZmhxYURJY3lmYmdpTVRtOTBaVG9nV1c5MUlHMTFjM1FnYjNkdUlIUm9aU0IwYVhSc1pTQm1hWEp6ZENCMGFHVnVJSGx2ZFNCallXNGdkWE5sSUhSb1pXMGdZWFFnYlhWc2RHbHdiR1VnZEdsdFpYTWdZVzVrSUdOeVpXRjBaU0JrYVdabVpYSmxiblFnWTI5c2IzSnpMZz09')))
+titlesTab:AddLabel(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QnVnrwYtgqpgMerXiLydmAamChDtghCeYpdWABMXLarTEjsqmkgOELUQWV3Tmx5bmNtTnd1R2VibVJKa1h4eWtXTE9Fdk1KWFdSTVByUGVpZEFBenVVaURFTGRxc0tNWVUyOXRaU0IxYzJWeWN5QnZjaUJ3YkdGNVpYSnpJR0Z5WlNCaFlteGxJSFJ2SUhWelpTQjBhR1VnUVMxTElIUnBkR3hsSUhkcGRHaHZkWFFnYjNkdWFXNW5JR2wwTGc9PQ==')))
 
 -- Toggles
 farmTab:AddToggle({
-	Name = "Slap Farm",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('aXHbnNKeEWOzfVIfKLQRIjKqITooRWcVLbveoSuxwxRQHDSjGMbvmpUb0lwZGduWkpvZ3FLeGFkbXdwTFBkY29qQUplUnp4ZGVweklWcHRQcUhhUGd5V01vZ1RPZXJtRVUyeGhjQ0JHWVhKdA==')),
 	Default = false,
 	Callback = function(Value)
 	      task.wait(0.1)
@@ -565,7 +583,7 @@ farmTab:AddToggle({
 })
 
 miscTab:AddToggle({
-	Name = "No Inventory Limit",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('gqpTgWMNeAznKooILdzvhXNwWlynFSjgImykfhZVPUEuEzIFZMvWZVeamhBTnF4d1JxVmd4WHFwbGxTRVFkdEpRVFdidHJuSVhPZmpST05FRURRT3BPeUlIU2NoY1lNZVRtOGdTVzUyWlc1MGIzSjVJRXhwYldsMA==')),
 	Default = false,
 	Callback = function(Value)
 	      task.wait(0.1)
@@ -575,7 +593,7 @@ miscTab:AddToggle({
 })
 
 miscTab:AddToggle({
-	Name = "No Speed Effect",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('EhosUISaBVnvFQWljyURNfxQEJhEQZQeyRuAfSAIbJmyLzaDazYWTiGeGNBUVVTdlBBaGZ3a3d6ZkxOaExYQkJHZmJsZ1J3WnVoelR0dWtPVXRNSGtZTFJoVkF3S2NmclRtOGdVM0JsWldRZ1JXWm1aV04w')),
 	Default = false,
 	Callback = function(Value)
 	      task.wait(0.1)
@@ -586,290 +604,290 @@ miscTab:AddToggle({
 
 -- Buttons
 local plrname = game.Players.LocalPlayer.DisplayName
-homeTab:AddParagraph("ExoticHub","Welcome to ExoticHub, "..plrname ..". This script is made by DExploitz on YouTube.")
-homeTab:AddParagraph("Discord Link","https://discord.com/invite/tCkutUNkbg")
+homeTab:AddParagraph(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eRrLPZstAgSXpGmIjapvecjvjGSqSoesIDjxZWsWzLsBViyTWtlxozYa3lKc0xtTWFRdHdGeGZkdXdkTlhBbnRlUlRrc3VmYXFaQ1BwRlNiQktmYXdIQ1pkckhrRHJoWFJYaHZkR2xqU0hWaQ==')),nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('okllscrtzCUFbfXGzKXayjBdWqmwsPljUbriZFonLocVPqoMruJjMlccVFVVHN4UlpmVmp5TWZ5R3R1TlNPakthRnpoRlJqZndsUll2SHNSYmVLbWJZRlJpU3VUQVlPZlYyVnNZMjl0WlNCMGJ5QkZlRzkwYVdOSWRXSXNJQT09'))..plrname ..nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XvOWVHoXmPMzhhmeHxEHzXfJxtANAowdiUQZKscpIKVfdXqNpJusvkERGt5Uk5zU0lYWXlmckt3Y3pNaldLY0JpU1hEUkhmd0ZQRW1aY0NNZGFOSEJoS3ZyaUJ4YWJsSkxpQlVhR2x6SUhOamNtbHdkQ0JwY3lCdFlXUmxJR0o1SUVSRmVIQnNiMmwwZWlCdmJpQlpiM1ZVZFdKbExnPT0=')))
+homeTab:AddParagraph(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('PoDrBblaGlkfyEflotXomHxeVlyLyjCaHFnYCraoVxRbDIKaczZpGjPWlZIdkVzRUJNUUJHdk9ZcFB5RE1GdlpibWhOTGNidWJWV2dxSXJLRFJ6QlZLWW9zR3J0dEp2Q1JHbHpZMjl5WkNCTWFXNXI=')),nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('rFGDHlHegCjhcQsjEXrNiOEvVshggTocUNufzkDFNdGRkWCmDWHgbGvemt4eENNc0tLbVhhVHpJRFRCRnBiSG5UbEJZRFVRYlZYbFZxdmVpV2l0dXFzQ0t4RExIa09ncWFIUjBjSE02THk5a2FYTmpiM0prTG1OdmJTOXBiblpwZEdVdmRFTnJkWFJWVG10aVp3PT0=')))
 teleportTab:AddButton({
-	Name = "Brazil Island",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BUIYjBqxicPLguezYojuwMyAZwGsigqAGYQSCJeJXvOeSpeAmvNxKuaS3pUSXNiUEpqRWVqVExSeHd1Z2xxcnRxWm5wcWhoRFpvQ3BOd3lpYkhFVGNSRXJkRnRVRE9xeVFuSmhlbWxzSUVsemJHRnVaQT09')),
 	Callback = function()
-      		_G.tpname = "Brazil"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('YRLzwgYotpiOLGOJaxEQAcKRwXHwYSYdQuMlcAXfwGczRQKvxSdQqXVZk9zUmpCaG1DTEdBWEdUcXdLa0JpUmJKU1NlUW56SEp0RG9XQ0pMWFFCbUdFenBuQ2ZkaUFQSVFuSmhlbWxz'))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "Dimension Island",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zuWVwfOtrECXWrnjkwjOxtTItbFZwNlgITdWvLdGXTgXvMdMbGZJANHSG1tTFJlYnZaTU1pdmZzWElSTEFMeG9SZ2dvdWtWdnB3QVNBamZoYmJxTEttV3RhdFZQcXl0SFJHbHRaVzV6YVc5dUlFbHpiR0Z1WkE9PQ==')),
 	Callback = function()
-      		_G.tpname = "Dimension"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('opyLyysuPcwlCuMwxUSvGCyFsbBhNcRkNixCAIdlUPNcAbMOkFPObsNS1B4SVN0cUtud0lSSGhrckp1SVdVbUtFZkNvZGdOaVlLUnVxemtzbWlqd3BxRWVoSkRydUZEUlJHbHRaVzV6YVc5dQ=='))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "Backrooms",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BkxsWpEqZXYkkVAfDoZyJLHGLqgJXqAzgRreaHDomCKqxoAKzxUMVQsanZmRllrQ0h3b0lCcHhJdnRYaXVEYWtmSGZJbkxRZkZ6VFhPdGZXcWl0enR1RllLTU93V1hIVFFtRmphM0p2YjIxeg==')),
 	Callback = function()
-      		_G.tpname = "Backrooms"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('sPBtGFxVRlAdYycHTfGFkekUajgxieDBLxziErgeinFXnFHXIXZNDbvU29teFN6cHpjblBqQWVtcFFmd3d5aXpyWGRUY0FHcm14dlZaaWdweVBTRmZNUVJzTWVIUm9mdFFtRmphM0p2YjIxeg=='))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "School",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('yenTdiFagFObwsjXAnGvvzZFZWsnfIASnaOHTVIXTPvwXlTrMlqYFbQR0FnT0NIbG9zRHJIR0dnVldtZlhNZUlzUXJzSmFLUGNoZXJlY2VTd2NuZ3pOZ0JTeGFWcWZPWFUyTm9iMjlz')),
 	Callback = function()
-      		_G.tpname = "School"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('iIYSHfSFIWZRVnLeTZeVwtGuofXOKHtJWPbgFGvgjqPVCJSnquRfLtXV05JTUVuU2tTcEFaSktCZUdERFRQVGlQa1JtR2JMZU9FQ1BLUkNjZnp6S0Rvc2tud0ZkcW5nQVUyTm9iMjlz'))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "Castle",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wZkcsRMeGDHPlrEbeRrMYxVjHIXemDfdseWUASQhnBsBBdbOmEZgDyDQ0hMSFlXRWdURVNrcmV0SkVKR05PSFljWkR6RElFRllEeVN2cFRtV1dwRlhkQVVNS1Nkd3FSclEyRnpkR3hs')),
 	Callback = function()
-      		_G.tpname = "Castle"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('xeKZidGPyiqiSwZyybDfTIzvuSRxqbnQHMqUyygGtzccYoKXRPIAmNQT3N6SHV6T29kUFN1YlJTWm9PUUVXYkVrcHluQnZIeERzdnRTak54aW5WcE1jVE9VZHpBV3N4RFEyRnpkR3hs'))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "Volcano",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('YdpnkvntUoGqkQLlwMYKlCyJudaXRQcRVXJvQhsqKJaxnSkbstemhNGSmdFeGp0WlByZ3F1QURsU2tDbG1HZ0VGSGlBb3pPYnpydnd3Y1RDelRMVkNqallQbXhtcFhISVZtOXNZMkZ1Ync9PQ==')),
 	Callback = function()
-      		_G.tpname = "Volcano"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VmBncXoyvubCDyuUgwmieGpgCUdPiwWmZkcocyFxDNXYxsmsfDJxVhEWXBuVHVYYWF3R0NLVEV4amFvallJbmFVWWJOeG5rWGFsUHhOcEZJWllpSWlhWlhGcFhaemZEd1ZtOXNZMkZ1Ync9PQ=='))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "Church",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('thmDKVwWadBHbkJVEqPhhpWQoylmOnxBoofJlaKXpSHbxgyCTvpsuTTS2p0UEpORlRWQnRyemh3VU5XRHdycEp4bktQRW5DQ2xDV29zWHBBZUlTSnJ4TlpPemlPb0F5U1EyaDFjbU5v')),
 	Callback = function()
-      		_G.tpname = "Church"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CMcmhNDVfNELTVxUaTUjPxmZtYEUWXeWRbStsNGPSUrwGazpcLJLsamdkplRE5sSG5rSG5UUkNkSmlEZkxJb29FZWhpQ3RYV2ZYelRvSVpZdXliZHZvUmhoWVV2SHdYUlEyaDFjbU5v'))
               tp()
   	end    
 })
 teleportTab:AddButton({
-	Name = "Secret Obby",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('PwvWtFZLFzhbDeOjqgwxHEiTzjPZmNyEilvUvBxcjfwqRMOGjYfffQVVWdhVGpnWGFTS056V05aYXRod0hyY2pJVHJEY0xJT296d2JId0VXdmZFWnh1U2lGdkZtVnNRalUyVmpjbVYwSUU5aVluaz0=')),
 	Callback = function()
-      		_G.tpname = "Secret Obby"
+      		_G.tpname = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VOidlMwSsorYtvmIofYqqfeAYZKTjSuiVnhuUvKgjOVpRPuOkCENFJcQ2plekZRamNyWUlUZ0FraUxJTHFoZmFBdkF0dlhTTnFPdnBRT1lNZm5FZEJidVp0eEFNTkd2UVUyVmpjbVYwSUU5aVluaz0='))
               tp()
   	end    
 })
 titlesTab:AddButton({
-	Name = "Warrior",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('NKokkTFFegEJvKViJxEgCVNlPdiZBQLHqNtPtreaqRHbMcZTbRIDyVqRlJVbmxRaUZ2YUNLcFBsRnFzZFZQY09Ec2ZjeFVnZlhLbGpxVkJ1Z21MSGNidWdXUGJRRlBkWlYyRnljbWx2Y2c9PQ==')),
 	Callback = function()
-      		_G.titlename = "Warrior"
+      		_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('rkQvwQigWFzyfrllbZiPcXuDeosbjXMlcykEMSPLLxavLMAxsNiaVYqbW5KSEJWeWVCeFF6Q0FVUkR0WWJIaElaSXRrV3NJV2pSTUxsc1FJQXpxaW9mY1VyVkZuc0RJTlYyRnljbWx2Y2c9PQ=='))
               givetitle()
   	end    
 })
 titlesTab:AddButton({
-	Name = "Beginner",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ZkaltSMGpfTDsjuEnaOGFfqabGbrDuuMjPGKQRlpmFUegapBZeWWFfcZHpGV3ZQTXZSZ09mWkhyeGt3c1FlS0VVbk92ZG1icnhBcndkeElwbUtNamdVVXl3RlJyRWd3ZVFtVm5hVzV1WlhJPQ==')),
 	Callback = function()
-      		_G.titlename = "Beginner"
+      		_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KffcHIJeZeJZBfdrArpveRpdVtrAhDLLyzEyqKnXXSiUaWnmLAvRllUeFBRSWJyVE9TdmJySXJua2NwWFlFVVJsRkZyZmF0SlNtZmlIcVlHSGpudW9Ec0tpaWpPeHlkdlFtVm5hVzV1WlhJPQ=='))
               givetitle()
   	end    
 })
 titlesTab:AddButton({
-	Name = "Holy",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('mJlddBbyzElIIjydKzfdexHJGlmDHZNQsZYRsTBOqiGQtncUgTkuVLvdXVtUWJHWERIVUhod3lSTWVHV09XZnlReEpyTlZSRm5pVkZYTEluVnJZYUZLYmdVbWNOYVN4RFNHOXNlUT09')),
 	Callback = function()
-      		_G.titlename = "Holy"
+      		_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RblihSHLSxeMAXMzdthwrSUXEwgACqGkrNHEpGmInSFwCRolDbpqmeaeUJySVpxaElwdExsVHRqaXdyaExiZ1JPVWJtWGJhYlhyZWlrS2NVcGxtZ0hMRWdxQW1LWktKeFNHOXNlUT09'))
               givetitle()
   	end    
 })
 titlesTab:AddButton({
-	Name = "Hacker",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MrrdjOYOZnfIqTktVZzjtUoGbJCikltLzfFFRdmMqiWXvuZsJmNelIJZXFGZnBVeGlUZVZrQ3FYVnZMbHBRY3FXR3lGY1VRam1RT2hzQ2RLUmpnWlNoTWV6TXpCTkF1QlNHRmphMlZ5')),
 	Callback = function()
-      		_G.titlename = "Hacker"
+      		_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('IWesumOGjJGwrONqeNCqxzHOyUimBkXoHianzjTRiIByMkJLLDnhtAjS2pFSWVOb09ld05lRG5iRml4VEFoWEpKbEd1aW1NSm10V0hzWHRSRXZ2eW9lemxmbGZXRVlaT1NHRmphMlZ5'))
               givetitle()
   	end    
 })
 titlesTab:AddButton({
-	Name = "Admin",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('qICLUBHwsVIfSwMHxXAJTuPXjbrebmVlOgOJPmSsFrTywZpyDeyNsdhanhMeGZ6eGlDVnJva0JUdlpvSk1sY2R5a01sT1RUWGd2aUFqd1FrckV4Ymp0elFOT1NjUlhydFFXUnRhVzQ9')),
 	Callback = function()
-      		_G.titlename = "Admin"
+      		_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wUstQEdZCcWeDWfCXuCMakDVPPvloyiYCqQVvhhBVxMiACcbmVNoEsSaE1TdkFVcm1MU3FoWmZ6anFTdURhTUljUlhZTmFSZHlwU2V2SFZrWlBZRE1kZ1dXVExnSlRqWFFXUnRhVzQ9'))
               givetitle()
   	end    
 })
 titlesTab:AddButton({
-	Name = "A-K",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ITFpxWOVBKLAsKTBxkggqyfNByeFVssLeTJSlqhgtXuQcIFIKQKZadXT2RUSmZvSVNXbXBmdHdOTUFydGZ4cHNDU05XWnR6RnJKWFNqRk5lY0hXTWtyQmVpZkFmWlZOQlFTMUw=')),
 	Callback = function()
-      		_G.titlename = "A-K"
+      		_G.titlename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BTPZevRWnybJtSKYhejzZFJVEAsVUoNOkbFcsVjLrvgcxurZvXgGTQXZWZwS3FLbU5ScmR0VXBDUFJxTXZHUnNBa1pub1pxZERzQlBkeWJmcHltb3RHTW1tUURhRFNJa1FTMUw='))
               givetitle()
   	end    
 })
 badgesTab:AddButton({
-	Name = "Go to Asylum",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('zGggxQbdhVkzoqfNkpUQeUcsZWUDhpnREnCQmnpQiOicfyfvOoMEoWAdnFYS3lSenpWRG1vdnl5amdlWndaY3hteEtOTUFndHhISkNUQ2JybllCaWdvaU9URW5DbWtralIyOGdkRzhnUVhONWJIVnQ=')),
 	Callback = function()
-      		_G.badgename = "Asylum"
+      		_G.badgename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('LAEvvHllgoQKUmiAJVwnTRcSoEijEgVwORYKikFIMIYiWlnRUHAwoDVU25QQ3Z1UWhFcWNibWpNSnJqenlKU1hteGZXbHp5SHB5elpkZ256Y1RUaEx2TFlvTk9WQVN3UlFYTjViSFZ0'))
               badge()
   	end
 })
 badgesTab:AddButton({
-	Name = "Get Gunslinger Badge",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('vlVVxxYPYJkRmnPraleXdOOUWZWtkVKiinlFRMgXgrLufbgQzjBzbZMUnVnSGR5elVkd3BlVVJCSllHdWZsbHZwbEJTc0Noc2RaZUhDc2lCalZrQ014WGZYS29RVm5DbVIyVjBJRWQxYm5Oc2FXNW5aWElnUW1Ga1oyVT0=')),
 	Callback = function()
-      		_G.badgename = "Gunslinger"
+      		_G.badgename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('PGfknJONGMTIzjfhtwuCMRwyiwwAatVFiUrTWphQXiZlefhJzPNMPpkbHZNTVFsZ0VsU05TWm9oRktNa3VtSmtwZ0hSem9BalpLQnFjTXRIcXN5Z3JvTGJkcnhUVFRjcVIzVnVjMnhwYm1kbGNnPT0='))
               badge()
   	end
 })
 glovesTab:AddButton({
-	Name = "Brazil Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('srzRFeUkyEKHBfpVXNxUUqZIoQoRvfmIEICGvGqcPEHGLWKHztdSHGWQ0hFbnpUdkljekpKY1NGaVlaWGp3eFBJTlVHV0NuUEtzSEtXV3lBWlhBT3NoWXpET0RhbGFyTlFuSmhlbWxzSUVkc2IzWmw=')),
 	Callback = function()
-      		_G.glovename = "Brazil"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('jaHVmIUZvTijRxYGRoJtXvsbKSpiAurrpuERYZUgCVCgMPTvuFDbVgES0p5bXdwSGt1cnhzWElMSEZGbHdMandzeWRQcWFPeWlCTHhaam9vQ0doRlNVZmRuT0p3YWR6blFuSmhlbWxz'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Super Heal Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fBUbRjXLDewdwoppYRYcGBzVeRPzDOReeJShRcrZdxuwvVTtOfCjWwVUEZsRVVwRkNhb2d1VWZMY2J0R0JZVXpDQ1Bzd0Nxdm5EbGxzd25nalVBY21Eb214VGpRZ3ZVTVUzVndaWElnU0dWaGJDQkhiRzkyWlE9PQ==')),
 	Callback = function()
-      		_G.glovename = "Super Heal"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CXTDKWnEKlcyVOgHIHzFThvuZeXUZHlUjAuDOVypzQDQJWIRdyKIsvvVGRybW9GdFdlZklpbU9raUJuTk5kRGtkelRzaVJWTnlZdm1nWERsQXBrWFF0TmV1V21yWUt1aFUzVndaWElnU0dWaGJBPT0='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Superman Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QUlYbdPYmwAPmhAskLGHQGtTqEBJMLzOPxOLdrgjZfoPOQgzHaNiFwOUll6RllDUk5MU1RCZ3ZPYWV4YXh6eU5Ld1RpUURFQUFhamNLaFhPR2Z0UnVTSmpaZ0xzRWJBWVUzVndaWEp0WVc0Z1IyeHZkbVU9')),
 	Callback = function()
-      		_G.glovename = "Superman"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('aALEebrvDUEUUAHSqaNhVofGchTsQBkhzgwNnEZicxYfxIsoJZBehzvbkV4YmROSWlMTVpzcHdta3hXYW5FR05zZWNjYWZ3S3llemNib05mbG1zcE1ZTFZJQmRyUUdqblUzVndaWEp0WVc0PQ=='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Buff Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('soSNwQUmpFfcAnMCMQfrBSidytTMXhgEohPQiXSFwwNiQMUuMgaHgdWckJaWEhDV05pU1lqYnd1d1J5Rnhvd3phR2xzbGpmdG5EdlZNaGRZc0llYXhDZ1dYWVNiVXlQYVFuVm1aaUJIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Buff"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('JMYuAVOsNrowvkBSMejlVwZYALRWDCOuddjutuNsnJOCRrzNPDWZUYydHRKeENVd1lWemVGdHJSZkR2UUpBSlVXZFhPUmpGbk5FZ0ZSb0JEV2plSHNFUnlhU2FEcFZYblFuVm1aZz09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Killstreak 250 Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CPoENQGAFwcOiKWdYByXJmvIFtlJQrKmqHqCzbHSlvJhSylNCLCOJsBblVKWmVWdG1zVVppd0lwdm1rbFhnQ3JmcGl0UXBXdndZekt2aUp2RkRRUkhwQ1NLcXNFR0xqYlMybHNiSE4wY21WaGF5QXlOVEFnUjJ4dmRtVT0=')),
 	Callback = function()
-      		_G.glovename = "250"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QdatZsaJplYhktsqdLXhyjlTmPhTFaqpjpFhkUgEEaVMxvLNCURAbacS2VRd2xyenRhTmxMaFZmb0NGdWVZbFRJRWZFY2ZvTXVydXVWcklsbnFpb3FEYXlpWVNCR0RicE1qVXc='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Error Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('sdmVWIuyBmvohIbZVyPoxUjRCRrjxNohPYXDJHGIphXoQgFrPDKRDHvZ2J3WGhwenlBbkZsSFlvQVRsWXhaRFRPaHp3RlhrcXl5b2NCblhPdGR0ZXVBR3h6U2ZvdXBHcVJYSnliM0lnUjJ4dmRtVT0=')),
 	Callback = function()
-      		_G.glovename = "Error"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('IzWdxbcHRIyDAiwYNXXqUDJuNedxescMPtRWhiLTXRsmxptEhKQuvlFRURXVEtFQmhsUkNXVVFJZ0NkdEd6ZGVCcFhJa0R3Uml5SVNYaXhtY29KaERiS2pCb2hDTEtEYlJYSnliM0k9'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Overkill Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GehksIKdqNFnIJkaqacaLWATnVZRczekBPImLRRXGNAPiYiAeKMFZZbZVhWSndTQ3RDVFVvbnNmdFBxRXFSbVZmSnNZTGx5RmFoeFJrR3ROaEFHd1NtVnZYTmRreGFQVlQzWmxjbXRwYkd3Z1IyeHZkbVU9')),
 	Callback = function()
-      		_G.glovename = "Overkill"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('eTyCcFlJzqdgJNwYPzwCSEkSSlXHvhWFUnEtPxswQZCMlisEMGwpDHieWlOanNDdm9wRFp5T2ZBd2hrQkdOQnVkWWJxVVlxemRDanlTanpZbE5sUndVd1RzaFVQU3VWT1QzWmxjbXRwYkd3PQ=='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Backrooms Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('HpeqYvTJXrXWnTDZhoWWOTuKnhsLikrkdfDwFWSoGIfIjAJllWmgPbGTUd0V2RSTEN4UldQRVJWSk1yZUlSSkxlcFdnbVB5Ykt6dU1xQmJrZW1WRHpnY2FQTmx6amJaWVFtRmphM0p2YjIxeklFZHNiM1ps')),
 	Callback = function()
-      		_G.glovename = "Backrooms"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('EbdEpmphekVmyRWDGQajlzyKhbCnRhjivqpjQxPkPdCSaaLdVKxotCKVmFlZkpFTHV3SURseFhhcm9LdVNCbWJXbmRSYVNORUFwamZ2c2hpTnZQcmVmbEdMamxXTU5KT1FtRmphM0p2YjIxeg=='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Hour Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TuCKESMyewlTabpYztQIztlQilpEJhLgFnIrACIBcNVqpaPVkCbGSELVG94VFhBdVl3RlNtV1VnUmlyRkRpVnBrWm10ZGdLdkRsQ2RobUZrTHhtU0NSSFhhaW9YVHJtUlNHOTFjaUJIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Hour"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('fiVlqjZbkqplrUbGeWWcagKrZUtFEVPKUyMwRHPhCHewuISGjACQLemZEtOVVRhUU1xSFlTdUlFUkhlWFVCcHBWanRWZk1mV0l4YkRWWkxEaktuWVd5d050WU5WYU54R1NHOTFjZz09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Moderator Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ICrcrWMCKTSRyVpWoAmoROpqEYPsSygyzhNsssUjfHDRgFkLIyQSZCveWJ0ZVFLYlVaU252R3VqdEVKWmhPbllwSnlUYlNBWG9XZVd2aExkeXZ4UXdSU1JjZkdEd0hRTVRXOWtaWEpoZEc5eUlFZHNiM1ps')),
 	Callback = function()
-      		_G.glovename = "Moderator"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('unhYPiBsCtVqPHlNKPDMKzVArTMmYlkxCjWWYkGCGLmSMYKmpsMzQscQlpiV1h1VXRMeFlXSWpSSElQU0ZOc2ZYSUNwVmhyZ1JnSUZvZHBOc2V1UEFKVXBaZXh0R2dSZFRXOWtaWEpoZEc5eQ=='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Golden Hour Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QQJNtcoMDdUFZbACbZpozLuaFMbIVchFjFgiodMOgTsZumEOUthbiOKRlhTd09mZ3p0S3VBaFdBWlJXY1NBWU9qd3JYUkpIS2hmWm9zZ0xhallHcXJFWE1qQklSZXRDVlIyOXNaR1Z1SUVodmRYSWdSMnh2ZG1VPQ==')),
 	Callback = function()
-      		_G.glovename = "Golden Hour"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('IgDnSfldkRitVbmxizimykNPNBccESvwvKpGmECZeZccLciZwvxQpkmcVZOcFhBRGVqbHJXQUJIVE56YXFGdkRBc25XcVdBWm1tS3BLdFVqZERvcmNjRXZ3emVtRWdQa1IyOXNaR1Z1SUVodmRYST0='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Ruby Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XNyeJJLsOIpmKgvBqUSYYyDtHiseeYrczzPKkuICFykrRvQsLRxeZXvUXlQT0Z2b1lLZ250Z1hNaU5McnlNd2xEZFBVVGZGS0ZobGpwVEtyc0dyek1LQU1WRFZIWlBXalVuVmllU0JIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Ruby"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ITlkDYjSMnSJcxLVTmrOzanJKuxxNypzSaRcAdPVTprkJIWntjMHlGbTGFpaFNwdWZiV0h4bGJSQ2ZXcmhwR3FJZ01QeWZaTm9qblBrUFdnWUdvS0dUcVloSEpNQWZ5YlVuVmllUT09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Money Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lPWiIvZOzlLCayOeixRwigJybueWFgowGffeppcNQQfogUqAIBJomuqd1ZUZ0ZZbXNOQkpkS1RjTWVQS3Zhb05MaFJhY0ZrZnhVRmp1UWNnZVJJSnNIdE1BWnpZUHFaWVRXOXVaWGtnUjJ4dmRtVT0=')),
 	Callback = function()
-      		_G.glovename = "Money"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DRQBxfMMpdxkjbAAVigasVfJTgQvhcEfJpHwUmQbKMSUctUGZqFMPffZEhvalRmVGN3RG5uVHdYUmxYV0pmQk5vSXlPdGRTUFFuTFNYQ2tsS0l3dXBEZ1NJd0FkTkh4Z1RXOXVaWGs9'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Smile Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GCmrarMoUgEvOahUzjTNelwzztNNsjIYQpDhyZZhXsdwSlCpqykaiBcSlVxakxieENHcktiWkRTb3ZvVXFJS3FraUdMRWZYaGplTXFNVWV5WEpad3hQbXlVQkFTVWVCV1UyMXBiR1VnUjJ4dmRtVT0=')),
 	Callback = function()
-      		_G.glovename = "Smile"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MCRvKBiyUuuyByQAqwDCQHYodpcqWUAiksFwzfyyPCbERaLHiDvHUPkWHNReXRGZW9iSm9UZlNITFpOQkxhYkd5b1dwdkViSmNEdlRJTXlNSFJua0pDeGhLVWp4alBnZFUyMXBiR1U9'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Saitama Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('cTphQeCXdyTiwJQZtYkJQQlyOpSoPrJVcJNFQnhnOsgZbBdJMwmPVJZRmNscXlFdE5UZkdXamlVVFFQbXRsWllXY2pZZFJrZlFaZ05wT3dsQWR6cHJnRnhCVmlYS3BEelUyRnBkR0Z0WVNCSGJHOTJaUT09')),
 	Callback = function()
-      		_G.glovename = "Saitama"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DIaEeySXIgkRjyKDTcioDOuAuHOOgOcyYHPhlrUuGsoYRUqQrSwCZgVTFNQYnJac3hzVkZVVkJvQVlpU2trcFVPdE9pVkl5c1NPVFhGemd3VnR1eHZ6TmhHY0ROdVZtS1UyRnBkR0Z0WVE9PQ=='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Super Banana Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CXxPIlBBKzQsOVxItBSzRYftyImUZXlLbpBnkJOrXYlJYkcjBPiLkgMYVNmTWtqTExaVHRqeGdXZ3dRUkZMSVVkRkV0R1BaaVJ5UHJkTG9zemNQeEpYTFhVTXhDc0ZTVlUzVndaWElnUW1GdVlXNWhJRWRzYjNabA==')),
 	Callback = function()
-      		_G.glovename = "Super Banana"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MfsiKIfhPvncABVjKJsaCchOOeNBEDHLRNuUyZLplvFPLrIwkFxCAksbGNRRkRkZ3V1c1FIYllzeUdkRWVMSGhWZ3lkdFFJV3lLRlVlUmVRcFVyWm5lSHd6S2ZCRGFrV1UzVndaWElnUW1GdVlXNWg='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Sans Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('xCRvHFjDjwbNvRGsKylhZkjINQVcMRLyDgPooFKaodfpwCprKUdVUyeV3djd1pTQ0hycnZybWlpUHJocHZ4ZXdIaFVVaUN6c2NiamxMUk9UZ1BLUXdacFpNdGhaR2xKVVUyRnVjeUJIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Sans"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ZAUlgeEAJTTmMbyGBTtmGhBPNtAbKCNciExSzyNLkEpMAZrtkeZgDoBUVN3anFPRWVOVFpDUGZaVFZ6aGJUTVNydnNra2VQdm90bFFOdHVyZGdRbmVtS29EbUpxbnFjcFUyRnVjdz09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Smite Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('DgKqSWvtFmHZiBAnwrSAjiwFGoVyUCjlSlagKiZSxrTMerBQTfiNGDoR1lFVXlsSXJpamNST2lGdEtwdHlka0hvRGVFcHRtZXJNaVF5YnRmS0NoeHFHVm96aHBycnNxRVUyMXBkR1VnUjJ4dmRtVT0=')),
 	Callback = function()
-      		_G.glovename = "Smite"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('RrkMxOAcfaOohZmpNmUTDBnfsVvOipPeAJVQXbMfFYAfjmrrdugHQwETG9VV1REaWZaQkpQSkRiZHhEbGlUT3Jqd0JDZXNCUUh0eUdoTXp1WFJqSGJuQU1maEFsdFVkdlUyMXBkR1U9'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Golden Katana Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('TbkzhmLsMIqgNBOewJbWHHuINXwMfbdUqBUniEKdgijoakMlofNTqLRQXdHeWRFbnpBSXFyY3VDZmZEalZFSnZOSlhPc1FOT2ZOTEZ6SUtDT0xmc1VzVnV6eHRxQVNERFIyOXNaR1Z1SUV0aGRHRnVZU0JIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Golden Katana"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('sSWKeWOzIFStWZcEsVZZSCPrwgOICkCbYwFAPMEbNQmgkFcZVCBlyijWklja1JudlZNbmlEVGdabUhDUGZRRXlBaUdnRFlrR1dncFJnZVBTcHhkeXBMUW5URGFXb0RHVFIyOXNaR1Z1SUV0aGRHRnVZUT09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Holy Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('uleaQKUgrnRpxlrvUsGuWWNTHZNpijmeJJSWQzLKKVvWNpnrLwZJCDwZm1LU0tqQ0FUTXlvSUxUeFNpYlNoQUNnb2NiZ1pxeXRaRkJnbWdjbHBlZXNmSVZoS2dNRGdPVlNHOXNlU0JIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Holy"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('mtbRvqLGmyOHejFGEpQHLbtuuxMYTNdfElOsCASfUHUvtobdyCISNQubmZMYUZoU2ZTdHFPZlJCZXRYWFdRbnppQUpaYllXSFRid0RMckxJa3R5allQR0daeGdxbVB6c1NHOXNlUT09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Spam Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('cYILZJoYvrjflrrfrfNJLDrnDSWLmeaUynhZKsIdwqdNmnuYEfBrJWSWVV6YkNJUVdlTEdIa1ZEQ2JVaWtxVFlJTE1hVUprWHBLcHRsb3hCZXpYWWFrWURoT0dZRGpPbVUzQmhiU0JIYkc5MlpRPT0=')),
 	Callback = function()
-      		_G.glovename = "Spam"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('bksAokPmegeAoYZVTEYwlbCpztPpugLqDlDbbZTdpnLYSBZshRGseFiUlRsTmV0YnZYSGlDdkVwdlB4Y2Z1YnNQeUV6RlltYXVVUlBRaXl1YWREcEF1Q0x6ZWNORGpxY1UzQmhiUT09'))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Gunslinger Glove",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ruwxMhXErfCXDEtZdIARXSyAzaYFcmjICfcnYKjgukMIXQUaRAioMVAZWNLZHlYRkh3YlVScW54SkdiRmtpSGlNVk54bmx0Uk1qaHZoVkhDb2NhcElLVUxQV0F4alFiRVIzVnVjMnhwYm1kbGNpQkhiRzkyWlE9PQ==')),
 	Callback = function()
-      		_G.glovename = "Gunslinger"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('PetJWmzDjtciiXDUnGYvplorDYHzzqlpoJJRtWhLwdGNbqUHHJmsCoqblhYdlhDekNhcXVIVE9ESGxKTEN5akVJRGtRcVdVamhITkVkem5Oc3liUW1ZVUl6UnRWdFVsTFIzVnVjMnhwYm1kbGNnPT0='))
               giveglove()
   	end
 })
 glovesTab:AddButton({
-	Name = "Reroll Gloves (BROKEN)",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lIjSQXoipxWJUSPMcijanNsseMtrRlCwRwQCVVDtrubpbQHYBbfYNxRclFTQ0pxd016V09qUHlTZkFWY1ZqSWxyWUlzamlCS2NyWGd6VFljdllxVGxCWnhjR1NISFltdlVtVnliMnhzSUVkc2IzWmxjeUFvUWxKUFMwVk9LUT09')),
 	Callback = function()
-      		_G.glovename = "Reroll"
+      		_G.glovename = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QHteTPJzaIJlYyIrSomoGFkuOvnWyfmcNuRtWveCkDgsldBfgkRNjvPZEprT3BVV2VRWFFRcGlrQWJUSHppSUNKa2lJcU9CS2hoaUdTTkl0bnVxdFNCc2RxdEh4UVNud1VtVnliMnhz'))
               giveglove()
   	end
 })
 funTab:AddButton({
-	Name = "Instakill Others",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('lplyzszoEwWZokVZfeohnQoOQYNHxcxiuKQNwzpAgejjcpOPnsvRapiSUpPYkNRR1Nsb2x5cENWb09mTldPeUhFZWhQUkVmSlJRbXFqY3dka01MclZKaGJNcGtOWnBYWVNXNXpkR0ZyYVd4c0lFOTBhR1Z5Y3c9PQ==')),
 	Callback = function()
-	          _G.killmode = "all"
+	          _G.killmode = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wEBzDucGQDpmMvBIBDlFVXPekKtlkgAEwxUEDtOmTVITZzqHigNknsxeU5RanplQ1RhZklPYWdveG9hUnd3ZnJ6TkJuQWxOdEFuYUtjdEpFeUVlelBwYW1GU2ZlUGlFa1lXeHM='))
               kill()
   	end
 })
 funTab:AddToggle({
-	Name = "Slap Everyone",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('UomCuQajaAmJHCxaAwFfbCoKzHECFUFereUnyIGXHDogxPlqnbnSPHicUpMbWd4T1BNd3F5eWFHTkJyeUFDWUV0ZkJyWU9neVVQek1kaFBEY3pSTUFVdkhFTnNNYXFEcVUyeGhjQ0JGZG1WeWVXOXVaUT09')),
 	Default = false,
 	Callback = function(Value)
 		_G.slap = Value
@@ -877,61 +895,30 @@ funTab:AddToggle({
 	end    
 })
 funTab:AddTextbox({
-	Name = "Kill Player",
-	Default = "Username",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('BUZKZAXNnLvFJdZchVhtczxzSbIqpBZAyJeEPZnmeKEOytWfdzjFcTidktpUHJabUtBQndCTWhaV1F3QndGY25wSWJ0enJhYmtoVEtab0Rvc0d5SEpRZ3pRZUxPWFliYVMybHNiQ0JRYkdGNVpYST0=')),
+	Default = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('AKoCJRrInHsBmXQSegbtYAEKmdJyGlGVElMJCDRlbJbXshemGNFKbbfeUZwcEJ1bFFIS01mRElOc3Jqck5pUFZIVnFsdVNvdlBqcm1mUVJHdnZ1alBpTUxYdVhVQmZaTlZYTmxjbTVoYldVPQ==')),
 	TextDisappear = true,
 	Callback = function(Value)
-	    _G.killmode = "single"
+	    _G.killmode = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('tgzhpcTkIkqLIggvqHdRosWLbGUvCPeQHSRxlnZRVlwSHpsgsjlKQThS3B0Q0p1cXllYVFqeXhKWE1MaExjdEpUQ053ZXFXTnpGWkNHWFh0UEpMeldZYnlIbEZFT1JlWmMybHVaMnhs'))
 	    _G.plrname = Value
 		kill()
 	end	  
 })
 miscTab:AddButton({
-	Name = "Destroy Gui",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('JsBExqlmOFBamyWvDILsAOaaxwoUPxTGmUYLpTWLqIfuglEUAZwzMgudHVabmxHenZocHRtZFRGVmZ2d1lKT3pKeldidFFiQVdJU1h1TXJ5RUhRclNFU0FLRkRic1dZZlJHVnpkSEp2ZVNCSGRXaz0=')),
 	Callback = function()
       		OrionLib:Destroy()
   	end
 })
 miscTab:AddToggle({
-	Name = "Kick when admin joins",
+	Name = nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('FVGNMCQIbiYPgQChXvqFmLMvTEQncoHzeFtDdGZJPHLvxdBXzwiKKKBalB5RFBGQ3RMcElGR0FkY0pUblBlTnlSUmdYcURnTGdLSVJtWWRxUlhGT2R3SWVQZVV6a255WFMybGpheUIzYUdWdUlHRmtiV2x1SUdwdmFXNXo=')),
 	Default = false,
 	Callback = function(Value)
 		_G.antikick = Value
 		admindetect()
 	end    
 })
-miscTab:AddLabel("It's recommended to use anti chat logger because the admins can see chat logs anytime.")
-miscTab:AddButton({
-	Name = "Anti Chat Logger",
-	Callback = function(Value)
-	    OrionLib:MakeNotification({
-        	Name = "Anti Chat Logger",
-        	Content = "Please wait for a few seconds until the anti chat logger is loaded. Credits to Anthony for making the script.",
-        	Image = "rbxassetid://4483345998",
-        	Time = 3
-        })
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
-	end    
-})
-plrTab:AddToggle({
-	Name = "Anti Void",
-	Default = false,
-	Callback = function(Value)
-		_G.antivoid = Value
-		novoid()
-	end    
-})
-
-OrionLib:MakeNotification({
-	Name = "ExoticHub",
-	Content = "Loaded! ExoticHub made by DExploitz on YouTube.",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-OrionLib:MakeNotification({
-	Name = "Changelogs",
-	Content = "Added notes and warnings, more teleports, fixed slap farm, player tab, home tab, discord server, antivoid, anti chat logger",
-	Image = "rbxassetid://4483345998",
+miscTab:AddLabel(nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('XcETnnZdLETTtadLbQSAjQJIDlFEEwqfajyMLoXyFHwrYydAtNGHccpd1Bta0tDc3FyWUp5T2ZjbnVqTmJvVmNnS01DR2JsQmJkdndjQUJxUHlVaHNVZkFmak5Lc2dvZ1NYUT0='))s recommended to use anti chat logger because the admins can see chat logs anytime.nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('GLbmwdFuCghSvMhneTfRFxvyESquRCsaLKFfZPjVrFMvctqvGBizMeYSlZCYktod1pZeE9oWmhCTVZPYlJGdWJES0xhbmxMQVJER3ZBa25hTXJXSVZ3ZmdGQmxCR3h1UUtRMEtiV2x6WTFSaFlqcEJaR1JDZFhSMGIyNG9ldzBLQ1U1aGJXVWdQU0E9'))Anti Chat LoggernJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('wZRvianqGvhFJQtWYToiuwujiCnkBvIXaXFjfUBjOMsYYKUANLOtLEacGlvSWZEWHNDTmVSWkRDbUVIbW1adE9KdlZibGtuWmRTTWpwcVFLRFpEZXpZWWVibGlQQnB2d0xBMEtDVU5oYkd4aVlXTnJJRDBnWm5WdVkzUnBiMjRvVm1Gc2RXVXBEUW9KSUNBZ0lFOXlhVzl1VEdsaU9rMWhhMlZPYjNScFptbGpZWFJwYjI0b2V3MEtJQ0FnSUNBZ0lDQUpUbUZ0WlNBOUlBPT0='))Anti Chat LoggernJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('itXDkkJGHGdXqbFuwcuFdATiDXxHJyRbcxvVzWSoQIuuOnQmrammHZWYWV4UkdISGR3bnNJckxmTmtNSk5DSUphTnVrUUFJdlpJdW9CVVFKekJEQm93Q093Sk9udnJORUxBMEtJQ0FnSUNBZ0lDQUpRMjl1ZEdWdWRDQTlJQT09'))Please wait for a few seconds until the anti chat logger is loaded. Credits to Anthony for making the script.nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('QsTIuxSCriAxmnfvvzKXHdLETGZlZzWszUfovhleJGdyLrkFpdqLHxac0dFZURNbnZrSUFLekRNVGNqd0pVT1lIbUNpckl1QUx0cEhxS25uQWxNRXNEc0dBWFlTRnRSd0xBMEtJQ0FnSUNBZ0lDQUpTVzFoWjJVZ1BTQT0='))rbxassetid://4483345998nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('kIXdAotLHoqUmxZuxnMQwMSVSOLiryljwbtlwpQAfdGwJsmdcYHcteoWnlSeEdLbkNyTXdCdWtMZ1JXWWN1U2h6cE5qYkpQQXdTUFJzcklrYUJJZ1hLcVBkaUdsQWJHVExBMEtJQ0FnSUNBZ0lDQUpWR2x0WlNBOUlETU5DaUFnSUNBZ0lDQWdmU2tOQ2drSmJHOWhaSE4wY21sdVp5aG5ZVzFsT2toMGRIQkhaWFFv'))https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.luanJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('KAIChAVtIFQMIKHzkaVbAltJpbyYRegyqPHTTmVxZOHdbhAgYzwJYfESnVWZlBta2pnUU9NSnBCR3p0UmpnaHJRY0NhUExiWHl1eWdGaFBRUGRPQ0FHdlFOS1BOaVN4ZkxDQjBjblZsS1Nrb0tRMEtDV1Z1WkNBZ0lDQU5DbjBwRFFwd2JISlVZV0k2UVdSa1ZHOW5aMnhsS0hzTkNnbE9ZVzFsSUQwZw=='))Anti VoidnJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('VRSltotaNhEVboITFlwXNgscNTsQFuHGDBCRqvBlwoVXpnGOREosGgzcndHQ0tXQmxPbkxLb3hBcXdjc3pEVkxMU21EbUtnYVpib0dnTFN2QmhKRHZiemtBYXNTVkhjUkxBMEtDVVJsWm1GMWJIUWdQU0JtWVd4elpTd05DZ2xEWVd4c1ltRmpheUE5SUdaMWJtTjBhVzl1S0ZaaGJIVmxLUTBLQ1FsZlJ5NWhiblJwZG05cFpDQTlJRlpoYkhWbERRb0pDVzV2ZG05cFpDZ3BEUW9KWlc1a0lDQWdJQTBLZlNrTkNnMEtUM0pwYjI1TWFXSTZUV0ZyWlU1dmRHbG1hV05oZEdsdmJpaDdEUW9KVG1GdFpTQTlJQT09'))ExoticHubnJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('MuOBKPigVjXFndPhhNMiHlBUJQlVIBBXfERstxFVHVxjUYqRlIWQmvjY2d6b3N1c2tvYU9GaUpnVVROeUpuTktVVXlCdG51Qk5SdldJcndHREljaWNFVmVNUFRLbmdRckxBMEtDVU52Ym5SbGJuUWdQU0E9'))Loaded! ExoticHub made by DExploitz on YouTube.nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('NFXWApmolvZaCDURLKPJIydkJiIqWDfbadXhGqVUtiQCfeOhOaLRaOYVk9WbEZtYnpHWVBySFZTUldZTkxRRXRyU1FQcG9UTUhRTU5PcUt0cWtTd3NtbEtyZHpoZlZhcUxBMEtDVWx0WVdkbElEMGc='))rbxassetid://4483345998nJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('ruEvydXmXdTkixGbXSAORixnHtCcfYFDSvqMLDVMIjlQpUvFRRcfjmPTVVzc2xLdmZ6UlVqdFlIUFlFT1ptSmNIRW9UcmVJc0x5d05qb1hQd3F0cXBEelV6SUdBUUN4S0xBMEtDVlJwYldVZ1BTQTFEUXA5S1EwS1QzSnBiMjVNYVdJNlRXRnJaVTV2ZEdsbWFXTmhkR2x2YmloN0RRb0pUbUZ0WlNBOUlBPT0='))ChangelogsnJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('PMitSkXOyKEoIfEOHScdHrTQFITAymzlPkPWXgayXXSrhLDabErRMSySHJLVk52VENoUGNpZ0dYWFhxeHhvY3hpZnJyZWZKdndFU3dFbUVEc3dVSXhQdWNvRHZOSWRvTkxBMEtDVU52Ym5SbGJuUWdQU0E9'))Added notes and warnings, more teleports, fixed slap farm, player tab, home tab, discord server, antivoid, anti chat loggernJRzFaPjRribSCFLdXTRLuNUjZYmXQTMoLNgofYpsWhzPInrhsrejeSMbfbQzNWOtuu(sGyshEhiyVAlJaQIGkXNrLFCnDiRpYfpuvZSBCYNXLZJNTSibZaYvOQlKtJFnRGLbhbtlxInbI('CCLHHxNTimmEhwPioylBXNiTKPLluFrhJKrFgqhlRByqAwcHrnReKYWa0JoY01EVUpDY3VLSUZ5ZVFBcnRjckhUZGlETW1SS3dGTUJpQW1GUFB6Zmdwa1RjZGxmYWpEVUxBMEtDVWx0WVdkbElEMGc='))rbxassetid://4483345998',
 	Time = 5
 })
 
