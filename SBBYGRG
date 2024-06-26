@@ -1,4 +1,1039 @@
-function OaUjTTyVOMwPVJSpXdsJxjLarldPQsqXAPm(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+if game.PlaceId == 11680140533 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "ExoticHub | Slap Battles But You Get Random Gloves", HidePremium = false, IntroEnabled = false, IntroText = "ExoticHub", SaveConfig = true, ConfigFolder = "ExoConfig"})
 
+-- Values
 
-loadstring(game:HttpGet(OaUjTTyVOMwPVJSpXdsJxjLarldPQsqXAPm({10920,12180,12180,11760,12075,6090,4935,4935,10815,11025,12075,12180,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7140,7245,12600,11760,11340,11655,11025,12180,12810,4935,5985,10290,10605,10395,5145,5145,5145,5565,10395,5565,10185,5355,5880,10605,5145,5250,10500,10290,10290,10290,5880,5565,10290,10500,10605,5880,5775,5565,5250,5460,10605,5775,4935,11970,10185,12495,4935,10185,5985,10185,10605,10185,10185,10395,5040,5460,5040,5880,5670,10710,10185,5985,10185,10500,10395,5775,10395,10500,5775,5880,5250,5460,5355,5355,5565,5670,10710,10500,10290,10395,10710,5985,5040,5145,5985,10290,10395,4935,3885,5250,5565,5250,5355,3780,4725,4515,6720,5250,5880,11865,11655,11865,9135,10185,8505,11655,12495,12285,6825,11655,5880,5250,5880,5145,5880,5145,4725,4515,3885,5250,5565,5250,5355,4515,3885,5250,5565,5250,5355,6720,4305,3885,5250,5565,5355,7350,3465,3465,3885,5250,5565,5250,5040,4410,6195,3885,5250,5565,5250,5355,4725,6720,3885,5250,5565,5250,5565,3885,5250,5565,5250,5565,3885,5250,5565,5250,5565,10920,12495,11025,7665,12495,12495,11025,4410,3885,5250,5565,5250,5565,10185,7665,11865,6825,11235})))()
+_G.slapfarm = false
+_G.tpname = "Name"
+_G.titlename = "Name"
+_G.badgename = "Name"
+_G.glovename = "Name"
+_G.slap = false
+_G.antikick = false
+_G.nolimit = false
+_G.nospeed = false
+_G.killmode = "Mode"
+_G.plrname = "Name"
+_G.antivoid = false
+_G.setpower = false
+_G.setspeed = false
+
+-- Functions
+function slapfarm()
+      while _G.slapfarm == true do
+            local plr = game:GetService("Player")
+            local args1 = {
+                  [1] = "slash",
+                  [2] = workspace.DonoBoard.FirstPlace,
+                  [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                }              
+            local args2 = {
+                  [1] = "slash",
+                  [2] = workspace.DonoBoard.SecondPlace,
+                  [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                }              
+             local args3 = {
+                  [1] = "slash",
+                  [2] = workspace.DonoBoard.ThirdPlace,
+                  [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                }              
+            local args4 = {
+                  [1] = "slash",
+                  [2] = workspace.TimePlayedLeaderboard:FindFirstChild("First Place Avatar").Rig,
+                  [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                }              
+            local args5 = {
+                  [1] = "slash",
+                  [2] = workspace.NPC:FindFirstChild("weak dummy"),
+                  [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                }
+            
+            for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                  if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        v.Event:FireServer(unpack(args1))
+                        v.Event:FireServer(unpack(args2))
+                        v.Event:FireServer(unpack(args3))
+                        v.Event:FireServer(unpack(args4))
+                        v.Event:FireServer(unpack(args5))
+                  end
+            end
+            for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                  if v:IsA("Tool") and v:FindFirstChild("Event") then
+                        v.Event:FireServer(unpack(args1))
+                        v.Event:FireServer(unpack(args2))
+                        v.Event:FireServer(unpack(args3))
+                        v.Event:FireServer(unpack(args4))
+                        v.Event:FireServer(unpack(args5))
+                  end
+           end
+            
+            task.wait(.000000000000000000000000000000000000000000000000000000000000000000000000000001)
+      end
+end
+
+function giveglove()
+      -- Glove Tab
+      if _G.glovename == "Brazil" then 
+            local gargs1 = {
+                  [1] = "brazil"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs1))
+      end
+      if _G.glovename == "250" then 
+            local gargs2 = {
+                  [1] = "glove1"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs2))
+      end
+      if _G.glovename == "Error" then 
+            local gargs3 = {
+                  [1] = "glove2"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs3))
+      end
+      if _G.glovename == "Overkill" then 
+            local gargs4 = {
+                  [1] = "glove3"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs4))
+      end
+      if _G.glovename == "Backrooms" then 
+            local gargs5 = {
+                  [1] = "glove4"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs5))
+      end
+      if _G.glovename == "Hour" then 
+            local gargs6 = {
+                  [1] = "glove5"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs6))
+      end
+      if _G.glovename == "Moderator" then 
+            local gargs7 = {
+                  [1] = "glove6"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs7))
+      end
+      if _G.glovename == "Golden Hour" then 
+            local gargs8 = {
+                  [1] = "glove7"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs8))
+      end
+      if _G.glovename == "Ruby" then 
+            local gargs9 = {
+                  [1] = "glove8"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs9))
+      end
+      if _G.glovename == "Money" then 
+            local gargs10 = {
+                  [1] = "glove9"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs10))
+      end
+      if _G.glovename == "Smile" then 
+            local gargs11 = {
+                  [1] = "glove10"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs11))
+      end
+      if _G.glovename == "Buff" then 
+            local gargs12 = {
+                  [1] = "gym"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs12))
+      end
+      if _G.glovename == "Superman" then 
+            local gargs13 = {
+                  [1] = "superman"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs13))
+      end
+      if _G.glovename == "Saitama" then 
+            local gargs14 = {
+                  [1] = "saitama"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs14))
+      end
+      if _G.glovename == "Super Banana" then 
+            local gargs15 = {
+                  [1] = "banana"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs15))
+      end
+      if _G.glovename == "Sans" then 
+            local gargs16 = {
+                  [1] = "sans"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs16))
+      end
+      if _G.glovename == "Smite" then 
+            local gargs17 = {
+                  [1] = "smite"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs17))
+      end
+      if _G.glovename == "Super Heal" then 
+            local gargs18 = {
+                  [1] = "superheal"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs18))
+      end
+      if _G.glovename == "Golden Katana" then 
+            local gargs19 = {
+                  [1] = "katana"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs19))
+      end
+      if _G.glovename == "Holy" then 
+            local gargs20 = {
+                  [1] = "holy"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs20))
+      end
+      if _G.glovename == "Spam" then 
+            local gargs21 = {
+                  [1] = "spam"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs21))
+      end
+      if _G.glovename == "Gunslinger" then 
+            local gargs22 = {
+                  [1] = "gunslinger"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs22))
+      end
+      if _G.glovename == "Reroll" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
+      if _G.glovename == "" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
+      if _G.glovename == "Reroll" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
+      if _G.glovename == "Reroll" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
+      
+      --gloves: reroll, saitama, brazil, banana, glove1-10, sans, smite, superheal, katana, holy, gym, spam, gunslinger, superman
+end
+
+function tp()
+      local workspace = game:GetService("Workspace")
+      if _G.tpname == "Brazil" then
+            game.Players.LocalPlayer.Character:MoveTo(workspace.BrazilPosition.Position)
+      end
+      if _G.tpname == "Dimension" then
+            game.Players.LocalPlayer.Character:MoveTo(workspace.DimensionPosition.Position)
+      end
+      if _G.tpname == "Backrooms" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1465, 5177, -76))
+      end
+      if _G.tpname == "School" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(98, 295, 132))
+      end
+      if _G.tpname == "Castle" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(104, 294, -441))
+      end
+      if _G.tpname == "Volcano" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(323, 319, -20))
+      end
+      if _G.tpname == "Church" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-169, 327, 19))
+      end
+      if _G.tpname == "Secret Obby" then
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(96, 316, 44293))
+      end
+end
+      
+function givetitle() 
+      if _G.titlename == "Warrior" then
+            local targs1 = {
+                  [1] = "Warrior"
+                }
+
+            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs1))
+      end
+      if _G.titlename == "Beginner" then
+            local targs2 = {
+                  [1] = "Beginner"
+                }
+
+            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs2))
+      end
+      if _G.titlename == "Holy" then
+            local targs3 = {
+                  [1] = "Holy"
+                }
+
+            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs3))
+      end
+      if _G.titlename == "Hacker" then
+            local targs4 = {
+                  [1] = "Hacker"
+                }
+
+            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs4))
+      end
+      if _G.titlename == "Admin" then
+            local targs5 = {
+                  [1] = "Admin"
+                }
+
+            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs5))
+      end
+      if _G.titlename == "A-K" then
+            local targs6 = {
+                  [1] = "AK"
+                }
+
+            game:GetService("ReplicatedStorage").Events.GiveTitle:FireServer(unpack(targs6))
+      end
+end
+
+function badge()
+      if _G.badgename == "Asylum" then
+            local teleUI = game:GetService("Workspace").Extra.Stuff.teleportPart.UI:Clone()
+            local plr = game.Players.LocalPlayer
+            teleUI.Parent = plr.PlayerGui
+      end
+      if _G.badgename == "Gunslinger" then
+            local hat = game:GetService("Workspace").GunslingerBadge.TouchInterest
+            local plr = game.Players.LocalPlayer
+            firetouchinterest(plr, hat.Parent, 0)
+            task.wait(0.1)
+            firetouchinterest(plr, hat.Parent, 1)
+      end
+end
+
+function kill()
+      if _G.killmode == "all" then
+            for i, v in pairs(game.Players:GetPlayers()) do
+                  if v.Name ~= game.Players.LocalPlayer.Name then
+                        local kargs = {
+                              [1] = "slash",
+                              [2] = v.Character,
+                              [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
+                            }
+                        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                                    v.Event:FireServer(unpack(kargs))
+                              end
+                        end
+                        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                                    v.Event:FireServer(unpack(kargs))
+                              end
+                        end
+                  end
+            end
+      end
+      if _G.killmode == "single" then
+            if game:GetService("Players"):FindFirstChild(_G.plrname) then
+                  local kargs2 = {
+                        [1] = "slash",
+                        [2] = game:GetService("Players"):FindFirstChild(_G.plrname).Character,
+                        [3] = Vector3.new(-9999999999999999999999999, -99999999999999999999999999, -99999999999999999999999999)
+                      }
+                  for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                        if v:IsA("Tool") and v:FindFirstChild("Event") then
+                             v.Event:FireServer(unpack(kargs2))
+                        end
+                  end
+                  for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                       if v:IsA("Tool") and v:FindFirstChild("Event") then
+                              v.Event:FireServer(unpack(kargs2))
+                       end
+                  end
+            else
+                  OrionLib:MakeNotification({
+	                   Name = "Error",
+                   	Content = "Player Not Found!",
+	                   Image = "rbxassetid://4483345998",
+                   	Time = 2
+                  })
+            end
+      end
+end
+
+function slap()
+      while _G.slap == true do
+            for i, v in pairs(game.Players:GetPlayers()) do
+                  if v.Name ~= game.Players.LocalPlayer.Name then
+                        local sargs = {
+                              [1] = "slash",
+                              [2] = v.Character,
+                              [3] = Vector3.new(2.305302858352661, 4.531458941414712e-08, -3.2688803672790527)
+                            }
+                        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                                    v.Event:FireServer(unpack(sargs))
+                              end
+                        end
+                        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+                              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                                    v.Event:FireServer(unpack(sargs))
+                              end
+                        end
+                  end
+            end
+            task.wait(0.0000000000000000000000001)
+      end
+end
+
+function admindetect()
+      while _G.antikick == true do
+            if game.Players:FindFirstChild("DevOfficiallyReality") or game.Players:FindFirstChild("itz_galaxymidnight10") or game.Players:FindFirstChild("MONsocool666") or game.Players:FindFirstChild("almondandraisinaaaaa") or game.Players:FindFirstChild("sapotals2") or game.Players:FindFirstChild("25boi1") or game.Players:FindFirstChild("Emanman2014")  then
+                  OrionLib:MakeNotification({
+	                          Name = "Admin Detection",
+	                          Content = "Admin Joined! Kicking player...",
+	                          Image = "rbxassetid://4483345998",
+                          	Time = 2
+                       })
+                   task.wait(0.5)
+                   game.Players.LocalPlayer:Kick("Admin Joined. Kicked to avoid admin")
+            end
+            task.wait(0.1)
+       end
+end
+
+function nolimit()
+      while _G.nolimit == true do
+            task.wait(0.000001)
+            if game:GetService("StarterPlayer").StarterCharacterScripts:FindFirstChild("InventoryLimiter") then
+                  game:GetService("StarterPlayer").StarterCharacterScripts:FindFirstChild("InventoryLimiter"):Destroy()
+            end
+            if game.Players.LocalPlayer.Character:FindFirstChild("InventoryLimiter") then
+                  game.Players.LocalPlayer.Character:FindFirstChild("InventoryLimiter"):Destroy()
+            end
+      end
+end
+
+function nospeed()
+      while _G.nospeed == true do
+            task.wait(0.000001)
+            if game:GetService("StarterPlayer").StarterPlayerScripts:FindFirstChild("SpeedCamera") then
+                  game:GetService("StarterPlayer").StarterPlayerScripts:FindFirstChild("SpeedCamera"):Destroy()
+            end
+            if game.Players.LocalPlayer.PlayerScripts:FindFirstChild("SpeedCamera") then
+                  game.Players.LocalPlayer.PlayerScripts:FindFirstChild("SpeedCamera"):Destroy()
+            end
+      end
+end
+
+function novoid()
+    if _G.antivoid == true then
+        local part = Instance.new("Part", game.Workspace)
+        part.Name = "AntiVoid"
+        part.Anchored = true
+        part.Position = Vector3.new(103, 270, -147)
+        part.Size = Vector3.new(2048, 10, 2048)
+        part.Color = Color3.fromRGB(0, 0, 0)
+        part.Material = "Glass"
+        part.Transparency = 0.7
+        part.Touched:Connect(function(hit)
+            local plr = game.Players.LocalPlayer
+            plr.Character:MoveTo(Vector3.new(103, 294, -147))
+        end)
+        OrionLib:MakeNotification({
+	        Name = "Added Anti Void",
+        	Content = "Successfully added anti void!",
+        	Image = "rbxassetid://4483345998",
+        	Time = 5
+        })
+    elseif _G.antivoid == false then
+        if game:GetService("Workspace"):FindFirstChild("AntiVoid") then
+            game:GetService("Workspace"):FindFirstChild("AntiVoid"):Destroy()
+            OrionLib:MakeNotification({
+	            Name = "Deleted Anti Void",
+            	Content = "Successfully deleted anti void due to toggle being false!",
+            	Image = "rbxassetid://4483345998",
+            	Time = 5
+            })
+        end
+    end
+end
+
+function setpower()
+    while _G.setpower == true and task.wait(0.000001) do
+        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+            if v:IsA("Tool") and v:FindFirstChild("Event") then
+                v.Power.Value = Value
+            end
+        end
+        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+            if v:IsA("Tool") and v:FindFirstChild("Event") then
+                v.Power.Value = Value
+            end
+        end
+    end
+end
+
+function setspeed()
+    while _G.setspeed == true and task.wait(0.000001) do
+        for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+            if v:IsA("Tool") and v:FindFirstChild("Event") then
+                v.Speed.Value = Value
+            end
+        end
+        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+            if v:IsA("Tool") and v:FindFirstChild("Event") then
+                v.Speed.Value = Value
+            end
+        end
+    end
+end
+
+-- Tabs
+local homeTab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://17605789373",
+	PremiumOnly = false
+})
+
+local farmTab = Window:MakeTab({
+	Name = "Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local teleportTab = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local titlesTab = Window:MakeTab({
+	Name = "Titles",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local badgesTab = Window:MakeTab({
+	Name = "Badges",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local glovesTab = Window:MakeTab({
+	Name = "Gloves",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local funTab = Window:MakeTab({
+	Name = "Fun",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local miscTab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local plrTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Labels
+titlesTab:AddLabel("Note: You must own the title first then you can use them at multiple times and create different colors.")
+titlesTab:AddLabel("Some users or players are able to use the A-K title without owning it.")
+
+-- Toggles
+farmTab:AddToggle({
+	Name = "Slap Farm",
+	Default = false,
+	Callback = function(Value)
+	      task.wait(0.1)
+          _G.slapfarm = Value
+          giveglove()
+          slapfarm()
+	end
+})
+
+miscTab:AddToggle({
+	Name = "No Inventory Limit",
+	Default = false,
+	Callback = function(Value)
+	      task.wait(0.1)
+          _G.nolimit = Value
+          nolimit()
+	end
+})
+
+miscTab:AddToggle({
+	Name = "No Speed Effect",
+	Default = false,
+	Callback = function(Value)
+	      task.wait(0.1)
+          _G.nospeed = Value
+          nospeed()
+	end
+})
+
+--Buttons
+glovesTab:AddLabel("These two buttons works for any glove.")
+glovesTab:AddButton({
+	Name = "No Slap Cooldown",
+	Callback = function()
+  		for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                  v.Speed.Value = 0
+              end
+          end
+          for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                  v.Speed.Value = 0
+              end
+          end
+  	end    
+})
+glovesTab:AddButton({
+	Name = "Powerful Slap Knockback",
+	Callback = function()
+  		for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                  v.Power.Value = 100
+              end
+          end
+          for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+              if v:IsA("Tool") and v:FindFirstChild("Event") then
+                  v.Power.Value = 100
+              end
+          end
+  	end    
+})
+glovesTab:AddLabel("Note: You must OWN the gloves first then you can duplicate it.")
+local plrname = game.Players.LocalPlayer.DisplayName
+homeTab:AddParagraph("ExoticHub","Welcome to ExoticHub, "..plrname ..". This script is made by DExploitz on YouTube.")
+homeTab:AddParagraph("Discord Link","https://discord.com/invite/tCkutUNkbg")
+teleportTab:AddButton({
+	Name = "Brazil Island",
+	Callback = function()
+      		_G.tpname = "Brazil"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Dimension Island",
+	Callback = function()
+      		_G.tpname = "Dimension"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Backrooms",
+	Callback = function()
+      		_G.tpname = "Backrooms"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "School",
+	Callback = function()
+      		_G.tpname = "School"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Castle",
+	Callback = function()
+      		_G.tpname = "Castle"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Volcano",
+	Callback = function()
+      		_G.tpname = "Volcano"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Church",
+	Callback = function()
+      		_G.tpname = "Church"
+              tp()
+  	end    
+})
+teleportTab:AddButton({
+	Name = "Secret Obby",
+	Callback = function()
+      		_G.tpname = "Secret Obby"
+              tp()
+  	end    
+})
+titlesTab:AddButton({
+	Name = "Warrior",
+	Callback = function()
+      		_G.titlename = "Warrior"
+              givetitle()
+  	end    
+})
+titlesTab:AddButton({
+	Name = "Beginner",
+	Callback = function()
+      		_G.titlename = "Beginner"
+              givetitle()
+  	end    
+})
+titlesTab:AddButton({
+	Name = "Holy",
+	Callback = function()
+      		_G.titlename = "Holy"
+              givetitle()
+  	end    
+})
+titlesTab:AddButton({
+	Name = "Hacker",
+	Callback = function()
+      		_G.titlename = "Hacker"
+              givetitle()
+  	end    
+})
+titlesTab:AddButton({
+	Name = "Admin",
+	Callback = function()
+      		_G.titlename = "Admin"
+              givetitle()
+  	end    
+})
+titlesTab:AddButton({
+	Name = "A-K",
+	Callback = function()
+      		_G.titlename = "A-K"
+              givetitle()
+  	end    
+})
+badgesTab:AddButton({
+	Name = "Go to Asylum",
+	Callback = function()
+      		_G.badgename = "Asylum"
+              badge()
+  	end
+})
+badgesTab:AddButton({
+	Name = "Get Gunslinger Badge",
+	Callback = function()
+      		_G.badgename = "Gunslinger"
+              badge()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Brazil Glove",
+	Callback = function()
+      		_G.glovename = "Brazil"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Super Heal Glove",
+	Callback = function()
+      		_G.glovename = "Super Heal"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Superman Glove",
+	Callback = function()
+      		_G.glovename = "Superman"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Buff Glove",
+	Callback = function()
+      		_G.glovename = "Buff"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Killstreak 250 Glove",
+	Callback = function()
+      		_G.glovename = "250"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Error Glove",
+	Callback = function()
+      		_G.glovename = "Error"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Overkill Glove",
+	Callback = function()
+      		_G.glovename = "Overkill"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Backrooms Glove",
+	Callback = function()
+      		_G.glovename = "Backrooms"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Hour Glove",
+	Callback = function()
+      		_G.glovename = "Hour"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Moderator Glove",
+	Callback = function()
+      		_G.glovename = "Moderator"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Golden Hour Glove",
+	Callback = function()
+      		_G.glovename = "Golden Hour"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Ruby Glove",
+	Callback = function()
+      		_G.glovename = "Ruby"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Money Glove",
+	Callback = function()
+      		_G.glovename = "Money"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Smile Glove",
+	Callback = function()
+      		_G.glovename = "Smile"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Saitama Glove",
+	Callback = function()
+      		_G.glovename = "Saitama"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Super Banana Glove",
+	Callback = function()
+      		_G.glovename = "Super Banana"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Sans Glove",
+	Callback = function()
+      		_G.glovename = "Sans"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Smite Glove",
+	Callback = function()
+      		_G.glovename = "Smite"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Golden Katana Glove",
+	Callback = function()
+      		_G.glovename = "Golden Katana"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Holy Glove",
+	Callback = function()
+      		_G.glovename = "Holy"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Spam Glove",
+	Callback = function()
+      		_G.glovename = "Spam"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Gunslinger Glove",
+	Callback = function()
+      		_G.glovename = "Gunslinger"
+              giveglove()
+  	end
+})
+glovesTab:AddButton({
+	Name = "Reroll Gloves (BROKEN)",
+	Callback = function()
+      		_G.glovename = "Reroll"
+              giveglove()
+  	end
+})
+funTab:AddButton({
+	Name = "Instakill Others",
+	Callback = function()
+	          _G.killmode = "all"
+              kill()
+  	end
+})
+funTab:AddToggle({
+	Name = "Slap Everyone",
+	Default = false,
+	Callback = function(Value)
+		_G.slap = Value
+		slap()
+	end    
+})
+funTab:AddTextbox({
+	Name = "Kill Player",
+	Default = "Username",
+	TextDisappear = true,
+	Callback = function(Value)
+	    _G.killmode = "single"
+	    _G.plrname = Value
+		kill()
+	end	  
+})
+miscTab:AddButton({
+	Name = "Destroy Gui",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end
+})
+miscTab:AddToggle({
+	Name = "Kick when admin joins",
+	Default = false,
+	Callback = function(Value)
+		_G.antikick = Value
+		admindetect()
+	end    
+})
+miscTab:AddLabel("It's recommended to use anti chat logger because the admins can see chat logs anytime.")
+miscTab:AddButton({
+	Name = "Anti Chat Logger",
+	Callback = function(Value)
+	    OrionLib:MakeNotification({
+        	Name = "Anti Chat Logger",
+        	Content = "Please wait for a few seconds until the anti chat logger is loaded. Credits to Anthony for making the script.",
+        	Image = "rbxassetid://4483345998",
+        	Time = 3
+        })
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
+	end    
+})
+miscTab:AddLabel("Some cool scripts made by cool people.")
+miscTab:AddButton({
+	Name = "Infinite Yield FE",
+	Callback = function(Value)
+	    OrionLib:MakeNotification({
+        	Name = "IY",
+        	Content = "Made by Toon-arch on Github. https://github.com/Toon-arch",
+        	Image = "rbxassetid://4483345998",
+        	Time = 3
+        })
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end    
+})
+miscTab:AddButton({
+	Name = "Mobile Remote Spy",
+	Callback = function(Value)
+	    OrionLib:MakeNotification({
+        	Name = "Mobile SimpleSpy",
+        	Content = "Made by REDzHUB on github. https://github.com/REDzHUB",
+        	Image = "rbxassetid://4483345998",
+        	Time = 3
+        })
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+	end    
+})
+miscTab:AddButton({
+	Name = "Ghost Hub",
+	Callback = function(Value)
+	    OrionLib:MakeNotification({
+        	Name = "Ghost Hub",
+        	Content = "Made by GhostPlayer352 on github. https://github.com/GhostPlayer352",
+        	Image = "rbxassetid://4483345998",
+        	Time = 3
+        })
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+	end    
+})
+plrTab:AddToggle({
+	Name = "Anti Void",
+	Default = false,
+	Callback = function(Value)
+		_G.antivoid = Value
+		novoid()
+	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "ExoticHub",
+	Content = "Loaded! ExoticHub made by DExploitz on YouTube.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+OrionLib:MakeNotification({
+	Name = "Changelogs",
+	Content = "Added notes and warnings, more teleports, fixed slap farm, player tab, home tab, discord server, antivoid, anti chat logger, added more buttons",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+end
+OrionLib:Init()
