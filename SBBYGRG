@@ -4,20 +4,20 @@ local Window = OrionLib:MakeWindow({Name = "ExoticHub | Slap Battles But You Get
 
 -- Values
 
-_G.slapfarm = true
+_G.slapfarm = false
 _G.tpname = "Name"
 _G.titlename = "Name"
 _G.badgename = "Name"
 _G.glovename = "Name"
-_G.slap = true
-_G.antikick = true
-_G.nolimit = true
-_G.nospeed = true
+_G.slap = false
+_G.antikick = false
+_G.nolimit = false
+_G.nospeed = false
 _G.killmode = "Mode"
 _G.plrname = "Name"
+_G.antivoid = false
 
 -- Functions
-
 function slapfarm()
       while _G.slapfarm == true do
             local plr = game:GetService("Player")
@@ -233,6 +233,27 @@ function giveglove()
 
             game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
       end
+      if _G.glovename == "" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
+      if _G.glovename == "Reroll" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
+      if _G.glovename == "Reroll" then 
+            local gargs23 = {
+                  [1] = "reroll"
+                }
+
+            game:GetService("ReplicatedStorage").Events2.Y72Y732Y81Y381Y3218Y318Y32112312312:FireServer(unpack(gargs23))
+      end
       
       --gloves: reroll, saitama, brazil, banana, glove1-10, sans, smite, superheal, katana, holy, gym, spam, gunslinger, superman
 end
@@ -440,10 +461,49 @@ function nospeed()
       end
 end
 
+function novoid()
+    if _G.antivoid == true then
+        local part = Instance.new("Part", game.Workspace)
+        part.Name = "AntiVoid"
+        part.Anchored = true
+        part.Position = Vector3.new(103, 270, -147)
+        part.Size = Vector3.new(2048, 10, 2048)
+        part.Color = Color3.fromRGB(0, 0, 0)
+        part.Material = "Glass"
+        part.Transparency = 0.7
+        part.Touched:Connect(function(hit)
+            local plr = game.Players.LocalPlayer
+            plr.Character:MoveTo(Vector3.new(103, 294, -147))
+        end)
+        OrionLib:MakeNotification({
+	        Name = "Added Anti Void",
+        	Content = "Successfully added anti void!",
+        	Image = "rbxassetid://4483345998",
+        	Time = 5
+        })
+    elseif _G.antivoid == false then
+        if game:GetService("Workspace"):FindFirstChild("AntiVoid") then
+            game:GetService("Workspace"):FindFirstChild("AntiVoid"):Destroy()
+            OrionLib:MakeNotification({
+	            Name = "Deleted Anti Void",
+            	Content = "Successfully deleted anti void due to toggle being false!",
+            	Image = "rbxassetid://4483345998",
+            	Time = 5
+            })
+        end
+    end
+end
+
 -- Tabs
+local homeTab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://17605789373",
+	PremiumOnly = false
+})
+
 local farmTab = Window:MakeTab({
 	Name = "Farm",
-	Icon = "rbxassetid://17605789373",
+	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
@@ -478,6 +538,11 @@ local funTab = Window:MakeTab({
 })
 local miscTab = Window:MakeTab({
 	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local plrTab = Window:MakeTab({
+	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -520,6 +585,9 @@ miscTab:AddToggle({
 })
 
 -- Buttons
+local plrname = game.Players.LocalPlayer.DisplayName
+homeTab:AddParagraph("ExoticHub","Welcome to ExoticHub, "..plrname ..". This script is made by DExploitz on YouTube.")
+homeTab:AddParagraph("Discord Link","https://discord.com/invite/tCkutUNkbg")
 teleportTab:AddButton({
 	Name = "Brazil Island",
 	Callback = function()
@@ -832,6 +900,27 @@ miscTab:AddToggle({
 		admindetect()
 	end    
 })
+miscTab:AddLabel("It's recommended to use anti chat logger because the admins can see chat logs anytime.")
+miscTab:AddButton({
+	Name = "Anti Chat Logger",
+	Callback = function(Value)
+	    OrionLib:MakeNotification({
+        	Name = "Anti Chat Logger",
+        	Content = "Please wait for a few seconds until the anti chat logger is loaded. Credits to Anthony for making the script.",
+        	Image = "rbxassetid://4483345998",
+        	Time = 3
+        })
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
+	end    
+})
+plrTab:AddToggle({
+	Name = "Anti Void",
+	Default = false,
+	Callback = function(Value)
+		_G.antivoid = Value
+		novoid()
+	end    
+})
 
 OrionLib:MakeNotification({
 	Name = "ExoticHub",
@@ -841,11 +930,10 @@ OrionLib:MakeNotification({
 })
 OrionLib:MakeNotification({
 	Name = "Changelogs",
-	Content = "Added notes and warnings, more teleports, fixed slap farm.",
+	Content = "Added notes and warnings, more teleports, fixed slap farm, player tab, home tab, discord server, antivoid, anti chat logger",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-
 
 end
 OrionLib:Init()
